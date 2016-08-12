@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -370,6 +371,63 @@
             </objects>
             <point key="canvasLocation" x="2114.5" y="157.5"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="zxI-43-LMU">
+            <objects>
+                <windowController id="AYi-Fl-w41" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="iw2-n3-wSm">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                    </window>
+                    <connections>
+                        <segue destination="3ze-R0-cYF" kind="relationship" relationship="window.shadowedContentViewController" id="NHn-e1-Wq3"/>
+                    </connections>
+                </windowController>
+                <customObject id="kcF-2b-Eko" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="-273"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="69N-RT-FWs">
+            <objects>
+                <viewController id="3ze-R0-cYF" sceneMemberID="viewController">
+                    <view key="view" id="NQ0-jF-yeB">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTt-hP-KX1">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <clipView key="contentView" ambiguous="YES" id="G2W-xv-nbC">
+                                    <rect key="frame" x="1" y="1" width="478" height="268"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lCv-j5-bwt">
+                                            <rect key="frame" x="0.0" y="174" width="181" height="94"/>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ziY-Rh-FdM">
+                                    <rect key="frame" x="1" y="253" width="478" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="zLn-rR-dsN">
+                                    <rect key="frame" x="463" y="1" width="16" height="268"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-KB-4LU">
+                                <rect key="frame" x="-102" y="-88" width="692" height="494"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Floorplan_2016.06.25" id="GrX-Vj-D0r"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="hc1-lX-TMG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194" y="-298"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="5lz-iL-ot6">
             <objects>
@@ -379,7 +437,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcV-Tl-bls">
-                                <rect key="frame" x="260" y="272" width="84" height="32"/>
+                                <rect key="frame" x="260" y="289" width="84" height="32"/>
                                 <buttonCell key="cell" type="push" title="Google" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KN0-KQ-V9L">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -395,22 +453,22 @@
         <!--View Controller-->
         <scene sceneID="fWh-QE-ZIm">
             <objects>
-                <viewController id="ux7-r4-qCu" sceneMemberID="viewController">
+                <viewController id="ux7-r4-qCu" customClass="ViewController" customModule="mApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="DAK-W9-AsJ">
                         <rect key="frame" x="0.0" y="0.0" width="832" height="685"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="f3c-bA-IBK" customClass="MGLMapView">
+                            <mapView fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-uD-8rO">
                                 <rect key="frame" x="0.0" y="0.0" width="832" height="685"/>
-                            </customView>
+                                <connections>
+                                    <outlet property="delegate" destination="ux7-r4-qCu" id="9lV-cn-UKM"/>
+                                </connections>
+                            </mapView>
                         </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="f3c-bA-IBK" secondAttribute="trailing" id="8tt-Ue-hv4"/>
-                            <constraint firstItem="f3c-bA-IBK" firstAttribute="leading" secondItem="DAK-W9-AsJ" secondAttribute="leading" id="PYg-St-Hri"/>
-                            <constraint firstAttribute="bottom" secondItem="f3c-bA-IBK" secondAttribute="bottom" id="W3E-ie-gW0"/>
-                            <constraint firstItem="f3c-bA-IBK" firstAttribute="top" secondItem="DAK-W9-AsJ" secondAttribute="top" id="dYa-9v-u18"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="FsW-uD-8rO" id="v23-w1-eCE"/>
+                    </connections>
                 </viewController>
                 <customObject id="0QC-mc-BX4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,6 +476,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Floorplan_2016.06.25" width="1584" height="1224"/>
         <image name="NSShareTemplate" width="11" height="16"/>
         <image name="define_location" width="100" height="100"/>
         <image name="user_male_circle_filled" width="100" height="100"/>
