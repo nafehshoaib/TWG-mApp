@@ -1,0 +1,19 @@
+//
+//  LoginViewController.swift
+//  mApp
+//
+//  Created by Mehta on 2016-08-15.
+//  Copyright © 2016 nafehshoaib. All rights reserved.
+//
+
+import Cocoa
+
+class LoginViewController: NSViewController {
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do view setup here.
+    }
+    
+}
