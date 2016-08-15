@@ -436,20 +436,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="605" height="399"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yB-yE-Kdz">
-                                <rect key="frame" x="132" y="321" width="340" height="48"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Welcome to mApps!" id="icq-qR-igE">
-                                    <font key="font" metaFont="systemThin" size="40"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfW-ml-fH6">
                                 <rect key="frame" x="79" y="221" width="173" height="35"/>
                                 <buttonCell key="cell" type="square" title="GMAIL" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="csr-bm-FEo">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="systemThin" size="13"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="Gmail:" target="XKf-33-qCS" id="6Bx-MT-gj9"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HW7-oa-2kJ">
                                 <rect key="frame" x="83" y="269" width="103" height="36"/>
@@ -465,6 +460,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="Slack:" target="XKf-33-qCS" id="7Me-qs-R7h"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WEy-ky-vXE">
                                 <rect key="frame" x="83" y="163" width="108" height="36"/>
@@ -484,7 +482,19 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="GetStarted:" target="XKf-33-qCS" id="MRf-Lx-QFX"/>
+                                    <segue destination="EsA-cq-GjR" kind="modal" id="Fpq-We-jMf"/>
+                                </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8J-xW-Yfi">
+                                <rect key="frame" x="124" y="335" width="358" height="44"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Welcome to mApps!" id="YrR-Kd-izd">
+                                    <font key="font" metaFont="systemThin" size="40"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="WEy-ky-vXE" firstAttribute="height" secondItem="qZY-PA-hsz" secondAttribute="height" id="KjT-O0-Rvi"/>
@@ -492,15 +502,14 @@
                             <constraint firstItem="HW7-oa-2kJ" firstAttribute="height" secondItem="qZY-PA-hsz" secondAttribute="height" id="Qyd-Oj-50l"/>
                             <constraint firstItem="gWm-Rp-EWb" firstAttribute="height" secondItem="qZY-PA-hsz" secondAttribute="height" id="WP3-kY-qVV"/>
                             <constraint firstItem="HW7-oa-2kJ" firstAttribute="top" secondItem="qZY-PA-hsz" secondAttribute="top" constant="94" id="Yqb-od-Z1R"/>
-                            <constraint firstItem="5yB-yE-Kdz" firstAttribute="top" secondItem="qZY-PA-hsz" secondAttribute="top" constant="30" id="YvA-ew-DxV"/>
                             <constraint firstItem="WEy-ky-vXE" firstAttribute="top" secondItem="qZY-PA-hsz" secondAttribute="top" constant="200" id="dxv-2C-hML"/>
+                            <constraint firstItem="p8J-xW-Yfi" firstAttribute="centerX" secondItem="qZY-PA-hsz" secondAttribute="centerX" id="gqE-Pb-Vb6"/>
                             <constraint firstItem="gWm-Rp-EWb" firstAttribute="width" secondItem="qZY-PA-hsz" secondAttribute="width" id="hYE-a7-yAI"/>
                             <constraint firstItem="HW7-oa-2kJ" firstAttribute="width" secondItem="qZY-PA-hsz" secondAttribute="width" id="nEN-oJ-i5Z"/>
-                            <constraint firstItem="5yB-yE-Kdz" firstAttribute="centerX" secondItem="qZY-PA-hsz" secondAttribute="centerX" id="z3y-qI-dUj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Title" destination="5yB-yE-Kdz" id="6Gx-at-1Sz"/>
+                        <outlet property="Title" destination="p8J-xW-Yfi" id="2m9-k2-i2A"/>
                     </connections>
                 </viewController>
                 <customObject id="fg1-c9-fAx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

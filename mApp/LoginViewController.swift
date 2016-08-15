@@ -10,7 +10,15 @@ import Cocoa
 
 class LoginViewController: NSViewController {
 
-
+    @IBAction func Gmail(sender: AnyObject) {
+    }
+    
+    @IBAction func Slack(sender: AnyObject) {
+    }
+    
+    @IBAction func GetStarted(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
