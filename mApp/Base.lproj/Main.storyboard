@@ -498,7 +498,7 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="GetStarted:" target="XKf-33-qCS" id="MRf-Lx-QFX"/>
-                                    <segue destination="Kn0-aL-zuB" kind="modal" id="r0B-sS-Wrs"/>
+                                    <segue destination="Kn0-aL-zuB" kind="sheet" id="r0B-sS-Wrs"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-Oc-N7b">
@@ -530,7 +530,7 @@
                 </viewController>
                 <customObject id="fg1-c9-fAx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="629"/>
+            <point key="canvasLocation" x="2274" y="861"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="As3-lt-nKO">
@@ -592,7 +592,7 @@
                 </viewController>
                 <customObject id="6mR-hi-N05" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="1095"/>
+            <point key="canvasLocation" x="2274" y="1415"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fWh-QE-ZIm">
