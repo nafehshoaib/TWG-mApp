@@ -38,7 +38,12 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+    
+    func addOverlay() {
+        let overlay = OfficeMapOverlay(office: office)
+        mapView?.addOverlay(overlay)
+    }
+    
 
 }
 
