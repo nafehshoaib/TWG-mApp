@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B839492C8C78207BA6CF5D6 /* Pods_mApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC3BFE625C92A15FDF1F40 /* Pods_mApp.framework */; };
+		845AA31E1D620BC70066D070 /* OfficeMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AA31D1D620BC70066D070 /* OfficeMapOverlay.swift */; };
+		845AA3201D620D300066D070 /* OfficeMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AA31F1D620D300066D070 /* OfficeMapOverlayView.swift */; };
 		FB3F58931D590075002C5078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58921D590075002C5078 /* AppDelegate.swift */; };
 		FB3F58951D590075002C5078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58941D590075002C5078 /* ViewController.swift */; };
 		FB3F58971D590075002C5078 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58961D590075002C5078 /* Document.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		845AA31D1D620BC70066D070 /* OfficeMapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeMapOverlay.swift; sourceTree = "<group>"; };
+		845AA31F1D620D300066D070 /* OfficeMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeMapOverlayView.swift; sourceTree = "<group>"; };
 		AA5A83C491D4A179118B7504 /* Pods-mApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mApp/Pods-mApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ABAC3BFE625C92A15FDF1F40 /* Pods_mApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0389615D93BC719FCE08A3E /* Pods-mApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-mApp/Pods-mApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */,
 				FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */,
 				FB79C4D91D5E661F00E056C5 /* Office.swift */,
+				845AA31D1D620BC70066D070 /* OfficeMapOverlay.swift */,
+				845AA31F1D620D300066D070 /* OfficeMapOverlayView.swift */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -252,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCC5AE31D5A2DB90015D32B /* mainWindowController.swift in Sources */,
+				845AA31E1D620BC70066D070 /* OfficeMapOverlay.swift in Sources */,
 				FB3F589A1D590075002C5078 /* Document.xcdatamodeld in Sources */,
 				FB3F58951D590075002C5078 /* ViewController.swift in Sources */,
+				845AA3201D620D300066D070 /* OfficeMapOverlayView.swift in Sources */,
 				FB79C4DA1D5E661F00E056C5 /* Office.swift in Sources */,
 				FB3F58931D590075002C5078 /* AppDelegate.swift in Sources */,
 				FB3F58971D590075002C5078 /* Document.swift in Sources */,
