@@ -16,7 +16,8 @@ class OfficeMapOverlayView: MKOverlayRenderer {
         self.overlayImage = overlayImage
         super.init(overlay: overlay)
     }
-
+    
+    /*
     override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: NSGraphicsContext) {
         
         let theMapRect = overlay.boundingMapRect
@@ -27,6 +28,6 @@ class OfficeMapOverlayView: MKOverlayRenderer {
         CGContextTranslateCTM(context.CGContext, 0.0, -theRect.size.height)
         CGContextDrawImage(context.CGContext, theRect, imageReference)
     }
-
+    */
 }
 
