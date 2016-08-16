@@ -18,4 +18,9 @@ class ProfileViewController: NSViewController {
     @IBAction func interestsSelection (sender: NSButton) {
 
     }
+    
+    @IBAction func FinishButton(sender: AnyObject) {
+        dismissController(self)
+    }
+
 }

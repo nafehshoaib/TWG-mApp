@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="9Ee-PR-KtR">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="EsA-cq-GjR">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -541,10 +541,10 @@
             <objects>
                 <viewController id="Kn0-aL-zuB" customClass="ProfileViewController" customModule="mApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wKa-BK-d4A">
-                        <rect key="frame" x="0.0" y="0.0" width="606" height="399"/>
+                        <rect key="frame" x="0.0" y="0.0" width="606" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-eK-mDv">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-eK-mDv">
                                 <rect key="frame" x="40" y="280" width="93" height="31"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Interests: " id="s1x-iQ-8uq">
                                     <font key="font" metaFont="systemThin" size="22"/>
@@ -552,7 +552,15 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Okk-Y6-Oap">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zm6-sR-YDh">
+                                <rect key="frame" x="40" y="165" width="93" height="31"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Skills: " id="seB-2V-yTH">
+                                    <font key="font" metaFont="systemThin" size="22"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okk-Y6-Oap">
                                 <rect key="frame" x="151" y="283" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="23a-nm-eZr"/>
@@ -563,7 +571,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="ERY-fT-KKT">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="ERY-fT-KKT">
                                 <rect key="frame" x="151" y="257" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="J6W-n8-fb5"/>
@@ -573,7 +581,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="pdB-HQ-Ows">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="pdB-HQ-Ows">
                                 <rect key="frame" x="151" y="230" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Nj4-oP-byc"/>
@@ -583,7 +591,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-vn-8MH">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-vn-8MH">
                                 <rect key="frame" x="151" y="203" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="o4N-Jc-phM"/>
@@ -593,7 +601,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="J5e-fN-CiH">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="J5e-fN-CiH">
                                 <rect key="frame" x="226" y="283" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="69" id="ZPN-8M-ilg"/>
@@ -603,112 +611,105 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-yN-3Pf">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-yN-3Pf">
                                 <rect key="frame" x="226" y="257" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Gaming" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Ufw-mV-Usb">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lMR-uY-4Tu">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="lMR-uY-4Tu">
                                 <rect key="frame" x="226" y="230" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Art" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="0xc-e4-8gB">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-el-Glh">
-                                <rect key="frame" x="226" y="203" width="73" height="25"/>
-                                <buttonCell key="cell" type="check" title="Poetry" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SBW-AZ-dWo">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-xL-F2R">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-xL-F2R">
                                 <rect key="frame" x="302" y="283" width="76" height="25"/>
                                 <buttonCell key="cell" type="check" title="Robotics" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="MI8-dL-wEC">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fMP-bK-BoZ">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="fMP-bK-BoZ">
                                 <rect key="frame" x="302" y="257" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Drinking" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="YQU-jD-WIK">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-w0-lXD">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-w0-lXD">
                                 <rect key="frame" x="302" y="230" width="79" height="25"/>
                                 <buttonCell key="cell" type="check" title="Outdoors" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Yd6-WJ-ok3">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-2S-S7c">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-2S-S7c">
                                 <rect key="frame" x="302" y="203" width="78" height="25"/>
                                 <buttonCell key="cell" type="check" title="Coding " bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SzS-be-kHr">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-34-bMq">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="12" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-34-bMq">
                                 <rect key="frame" x="396" y="283" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Dance" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="hGb-hQ-Uqv">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fEm-p6-DsG">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="13" translatesAutoresizingMaskIntoConstraints="NO" id="fEm-p6-DsG">
                                 <rect key="frame" x="396" y="257" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Animals" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ZnR-Rl-cKc">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="thK-85-kev">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="14" translatesAutoresizingMaskIntoConstraints="NO" id="thK-85-kev">
                                 <rect key="frame" x="396" y="230" width="80" height="25"/>
                                 <buttonCell key="cell" type="check" title="Shopping" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="p61-t7-Od0">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-wO-vMC">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-wO-vMC">
                                 <rect key="frame" x="396" y="203" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Shows" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="EI5-Dm-Hih">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-0p-lAA">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="16" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-0p-lAA">
                                 <rect key="frame" x="471" y="283" width="93" height="25"/>
                                 <buttonCell key="cell" type="check" title="Technology" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="bAx-eU-4ao">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PP7-YM-mUM">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP7-YM-mUM">
                                 <rect key="frame" x="471" y="257" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Magic" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="EHb-wQ-FoJ">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-tX-gyM">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="18" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-tX-gyM">
                                 <rect key="frame" x="471" y="230" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Cooking" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="i93-Of-yBm">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-Fr-O6t">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="19" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-Fr-O6t">
                                 <rect key="frame" x="471" y="203" width="104" height="25"/>
                                 <buttonCell key="cell" type="check" title="Board Games" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="vQE-Y3-3V4">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="az0-e1-Mq1">
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="az0-e1-Mq1">
                                 <rect key="frame" x="151" y="168" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9Zk-W8-oYS"/>
@@ -718,7 +719,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-eS-dIn">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-eS-dIn">
                                 <rect key="frame" x="151" y="142" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="b53-AM-7CS"/>
@@ -728,7 +729,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="8f0-Vc-RxL">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="8f0-Vc-RxL">
                                 <rect key="frame" x="151" y="115" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8ve-6e-RmS"/>
@@ -738,7 +739,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Mv-cQM">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Mv-cQM">
                                 <rect key="frame" x="151" y="88" width="73" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="YRT-V7-LuB"/>
@@ -748,77 +749,77 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-QP-Xks">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-QP-Xks">
                                 <rect key="frame" x="226" y="168" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Python" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="C0q-q5-xcT">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-nl-AMp">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-nl-AMp">
                                 <rect key="frame" x="226" y="142" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="JS" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="nkB-5i-ozC">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cdo-gO-OWM">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="Cdo-gO-OWM">
                                 <rect key="frame" x="226" y="115" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Ruby" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="s0W-VV-VEd">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dw8-sI-BKI">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="Dw8-sI-BKI">
                                 <rect key="frame" x="226" y="88" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Swift" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Mme-Ud-dip">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jef-5m-T5i">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="jef-5m-T5i">
                                 <rect key="frame" x="302" y="168" width="96" height="25"/>
                                 <buttonCell key="cell" type="check" title="HTML / CSS" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="J9z-we-Kuu">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="57H-Q3-mtR">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="57H-Q3-mtR">
                                 <rect key="frame" x="302" y="142" width="82" height="25"/>
                                 <buttonCell key="cell" type="check" title="Android" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="R5t-oY-Iif">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RXD-HG-Qfi">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="RXD-HG-Qfi">
                                 <rect key="frame" x="302" y="115" width="98" height="25"/>
                                 <buttonCell key="cell" type="check" title="Mobile Apps" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="n2o-ju-8Rw">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-YV-Amv">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-YV-Amv">
                                 <rect key="frame" x="302" y="88" width="84" height="25"/>
                                 <buttonCell key="cell" type="check" title="Web Apps" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="g9F-pi-UxS">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XY2-7M-loR">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="12" translatesAutoresizingMaskIntoConstraints="NO" id="XY2-7M-loR">
                                 <rect key="frame" x="396" y="168" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="iOS" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="eqL-pi-rRI">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pL3-Qr-h7p">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="13" translatesAutoresizingMaskIntoConstraints="NO" id="pL3-Qr-h7p">
                                 <rect key="frame" x="396" y="142" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Unity" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="nLU-fI-hKH">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-yA-90q">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="14" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-yA-90q">
                                 <rect key="frame" x="395" y="115" width="80" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="Jhk-Xa-gRK"/>
@@ -828,35 +829,35 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-FH-0Wx">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="15" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-FH-0Wx">
                                 <rect key="frame" x="396" y="88" width="73" height="25"/>
                                 <buttonCell key="cell" type="check" title="Sketch" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="pP8-Dr-kAm">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7LK-ZS-lGl">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="16" translatesAutoresizingMaskIntoConstraints="NO" id="7LK-ZS-lGl">
                                 <rect key="frame" x="471" y="168" width="117" height="25"/>
                                 <buttonCell key="cell" type="check" title="Communication" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Xdt-XK-umX">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-8h-c7f">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-8h-c7f">
                                 <rect key="frame" x="471" y="142" width="100" height="25"/>
                                 <buttonCell key="cell" type="check" title="Organization" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Z3j-gg-CPB">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xHD-hd-FIP">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="18" translatesAutoresizingMaskIntoConstraints="NO" id="xHD-hd-FIP">
                                 <rect key="frame" x="471" y="115" width="89" height="25"/>
                                 <buttonCell key="cell" type="check" title="Leadership" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="nuM-0n-yxg">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uqi-bn-nBp">
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="19" translatesAutoresizingMaskIntoConstraints="NO" id="Uqi-bn-nBp">
                                 <rect key="frame" x="471" y="88" width="104" height="25"/>
                                 <buttonCell key="cell" type="check" title="Management" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="5Ek-FI-1xe">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -870,10 +871,10 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="doneButton:" target="Kn0-aL-zuB" id="rXw-nO-AIU"/>
+                                    <action selector="FinishButton:" target="Kn0-aL-zuB" id="IA2-5k-ut6"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Jb-qo-60u">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jb-qo-60u">
                                 <rect key="frame" x="19" y="314" width="569" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="ilM-ky-Id6"/>
@@ -884,14 +885,13 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zm6-sR-YDh">
-                                <rect key="frame" x="40" y="165" width="93" height="31"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Skills: " id="seB-2V-yTH">
-                                    <font key="font" metaFont="systemThin" size="22"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <button verticalHuggingPriority="750" misplaced="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-el-Glh">
+                                <rect key="frame" x="226" y="203" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Poetry" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SBW-AZ-dWo">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="XY2-7M-loR" firstAttribute="firstBaseline" secondItem="7LK-ZS-lGl" secondAttribute="firstBaseline" id="003-Ay-vZf"/>
@@ -1052,7 +1052,7 @@
                 </viewController>
                 <customObject id="6mR-hi-N05" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2827" y="1297.5"/>
+            <point key="canvasLocation" x="2827" y="1297"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fWh-QE-ZIm">
