@@ -15,4 +15,7 @@ class ProfileViewController: NSViewController {
         // Do view setup here.
     }
     
+    @IBAction func doneButton(sender: NSButton) {
+        dismissViewController(self)
+    }
 }
