@@ -10,6 +10,8 @@ import Cocoa
 import Quartz
 import MapKit
 
+public var isLoggedIn = false
+
 class ViewController: NSViewController {
     
     //@IBOutlet var pdfView: PDFView?

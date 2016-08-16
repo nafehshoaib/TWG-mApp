@@ -20,6 +20,7 @@
 		FB3F589F1D590077002C5078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3F589D1D590077002C5078 /* Main.storyboard */; };
 		FB79C4D81D5E65BB00E056C5 /* MapLocal.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */; };
 		FB79C4DA1D5E661F00E056C5 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4D91D5E661F00E056C5 /* Office.swift */; };
+		FB79C4DE1D6251DB00E056C5 /* loginStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */; };
 		FBCC5AE31D5A2DB90015D32B /* mainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */; };
 		FBCC5AE51D5A58B20015D32B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCC5AE41D5A58B20015D32B /* Quartz.framework */; };
 		FBCC5AEA1D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */; };
@@ -59,6 +60,7 @@
 		FB3F58A01D590077002C5078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocal.plist; path = Resources/MapLocal.plist; sourceTree = "<group>"; };
 		FB79C4D91D5E661F00E056C5 /* Office.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
+		FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginStoryboardSegue.swift; sourceTree = "<group>"; };
 		FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainWindowController.swift; sourceTree = "<group>"; };
 		FBCC5AE41D5A58B20015D32B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Floorplan_2016.06.25.png.pdf; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				845AA31F1D620D300066D070 /* OfficeMapOverlayView.swift */,
 				845AA3211D62293E0066D070 /* LoginViewController.swift */,
 				845AA3231D624BF80066D070 /* ProfileViewController.swift */,
+				FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				845AA3221D62293E0066D070 /* LoginViewController.swift in Sources */,
 				FBCC5AE31D5A2DB90015D32B /* mainWindowController.swift in Sources */,
+				FB79C4DE1D6251DB00E056C5 /* loginStoryboardSegue.swift in Sources */,
 				845AA3241D624BF90066D070 /* ProfileViewController.swift in Sources */,
 				845AA31E1D620BC70066D070 /* OfficeMapOverlay.swift in Sources */,
 				FB3F589A1D590075002C5078 /* Document.xcdatamodeld in Sources */,
