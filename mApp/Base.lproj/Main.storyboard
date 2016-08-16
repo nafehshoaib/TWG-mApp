@@ -540,53 +540,317 @@
                         <rect key="frame" x="0.0" y="0.0" width="606" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jb-qo-60u">
-                                <rect key="frame" x="19" y="304" width="569" height="66"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Please complete your profile." id="3jD-aY-F1p">
-                                    <font key="font" metaFont="systemThin" size="40"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-eK-mDv">
-                                <rect key="frame" x="70" y="253" width="93" height="31"/>
+                                <rect key="frame" x="40" y="281" width="93" height="31"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Interests: " id="s1x-iQ-8uq">
                                     <font key="font" metaFont="systemThin" size="22"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-jm-HNc">
-                                <rect key="frame" x="169" y="208" width="225" height="76"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Cgj-xq-ypi">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zm6-sR-YDh">
-                                <rect key="frame" x="70" y="143" width="93" height="31"/>
+                                <rect key="frame" x="40" y="166" width="93" height="31"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Skills: " id="seB-2V-yTH">
                                     <font key="font" metaFont="systemThin" size="22"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5r-CA-4mX">
-                                <rect key="frame" x="169" y="98" width="225" height="76"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Djx-ym-8oC">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okk-Y6-Oap">
+                                <rect key="frame" x="151" y="284" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Movies" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="6YP-SB-bQt">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-oz-qRn">
-                                <rect key="frame" x="445" y="40" width="117" height="60"/>
-                                <buttonCell key="cell" type="square" title="DONE" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FHd-jl-7cV">
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="ERY-fT-KKT">
+                                <rect key="frame" x="151" y="258" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Food" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Itl-sf-nIt">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="pdB-HQ-Ows">
+                                <rect key="frame" x="151" y="231" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Music" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="d3p-9Y-lBO">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-vn-8MH">
+                                <rect key="frame" x="151" y="204" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Books" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="lno-RM-Ygf">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="J5e-fN-CiH">
+                                <rect key="frame" x="237" y="284" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Sports" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="S8s-3b-rVw">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-yN-3Pf">
+                                <rect key="frame" x="237" y="258" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Gaming" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Ufw-mV-Usb">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMR-uY-4Tu">
+                                <rect key="frame" x="237" y="231" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Art" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="0xc-e4-8gB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-el-Glh">
+                                <rect key="frame" x="237" y="204" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Poetry" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SBW-AZ-dWo">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-xL-F2R">
+                                <rect key="frame" x="312" y="284" width="76" height="25"/>
+                                <buttonCell key="cell" type="check" title="Robotics" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="MI8-dL-wEC">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMP-bK-BoZ">
+                                <rect key="frame" x="312" y="258" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Drinking" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="YQU-jD-WIK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-w0-lXD">
+                                <rect key="frame" x="312" y="231" width="79" height="25"/>
+                                <buttonCell key="cell" type="check" title="Outdoors" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Yd6-WJ-ok3">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-2S-S7c">
+                                <rect key="frame" x="312" y="204" width="78" height="25"/>
+                                <buttonCell key="cell" type="check" title="Coding " bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SzS-be-kHr">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-34-bMq">
+                                <rect key="frame" x="391" y="284" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Dance" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="hGb-hQ-Uqv">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEm-p6-DsG">
+                                <rect key="frame" x="391" y="258" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Animals" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ZnR-Rl-cKc">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thK-85-kev">
+                                <rect key="frame" x="391" y="231" width="80" height="25"/>
+                                <buttonCell key="cell" type="check" title="Shopping" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="p61-t7-Od0">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-wO-vMC">
+                                <rect key="frame" x="391" y="204" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Shows" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="EI5-Dm-Hih">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-0p-lAA">
+                                <rect key="frame" x="471" y="284" width="93" height="25"/>
+                                <buttonCell key="cell" type="check" title="Technology" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="bAx-eU-4ao">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PP7-YM-mUM">
+                                <rect key="frame" x="471" y="258" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Magic" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="EHb-wQ-FoJ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-tX-gyM">
+                                <rect key="frame" x="471" y="231" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Cooking" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="i93-Of-yBm">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-Fr-O6t">
+                                <rect key="frame" x="471" y="204" width="104" height="25"/>
+                                <buttonCell key="cell" type="check" title="Board Games" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="vQE-Y3-3V4">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="az0-e1-Mq1">
+                                <rect key="frame" x="151" y="169" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Java" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="hAl-ns-0QG">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-eS-dIn">
+                                <rect key="frame" x="151" y="143" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="C++" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="3bb-ft-b1R">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="8f0-Vc-RxL">
+                                <rect key="frame" x="151" y="116" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="C" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="6ww-4z-Vwh">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Mv-cQM">
+                                <rect key="frame" x="151" y="89" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="C#" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SaO-gW-Dwv">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-QP-Xks">
+                                <rect key="frame" x="237" y="169" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Python" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="C0q-q5-xcT">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-nl-AMp">
+                                <rect key="frame" x="237" y="143" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="JS" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="nkB-5i-ozC">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdo-gO-OWM">
+                                <rect key="frame" x="237" y="116" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Ruby" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="s0W-VV-VEd">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dw8-sI-BKI">
+                                <rect key="frame" x="237" y="89" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Swift" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Mme-Ud-dip">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jef-5m-T5i">
+                                <rect key="frame" x="312" y="169" width="76" height="25"/>
+                                <buttonCell key="cell" type="check" title="Html " bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="J9z-we-Kuu">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57H-Q3-mtR">
+                                <rect key="frame" x="312" y="143" width="82" height="25"/>
+                                <buttonCell key="cell" type="check" title="MS Office" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="R5t-oY-Iif">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXD-HG-Qfi">
+                                <rect key="frame" x="312" y="116" width="98" height="25"/>
+                                <buttonCell key="cell" type="check" title="Mobile Apps" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="n2o-ju-8Rw">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-YV-Amv">
+                                <rect key="frame" x="312" y="89" width="84" height="25"/>
+                                <buttonCell key="cell" type="check" title="Web Apps" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="g9F-pi-UxS">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XY2-7M-loR">
+                                <rect key="frame" x="391" y="169" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="iOS" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="eqL-pi-rRI">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pL3-Qr-h7p">
+                                <rect key="frame" x="391" y="143" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="os x" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="nLU-fI-hKH">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-yA-90q">
+                                <rect key="frame" x="390" y="116" width="80" height="25"/>
+                                <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="xfc-Kg-oqQ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-FH-0Wx">
+                                <rect key="frame" x="391" y="89" width="73" height="25"/>
+                                <buttonCell key="cell" type="check" title="Shows" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="pP8-Dr-kAm">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LK-ZS-lGl">
+                                <rect key="frame" x="471" y="169" width="117" height="25"/>
+                                <buttonCell key="cell" type="check" title="Communication" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Xdt-XK-umX">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-8h-c7f">
+                                <rect key="frame" x="471" y="143" width="100" height="25"/>
+                                <buttonCell key="cell" type="check" title="Organization" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Z3j-gg-CPB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHD-hd-FIP">
+                                <rect key="frame" x="471" y="116" width="89" height="25"/>
+                                <buttonCell key="cell" type="check" title="Leadership" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="nuM-0n-yxg">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uqi-bn-nBp">
+                                <rect key="frame" x="471" y="89" width="104" height="25"/>
+                                <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="5Ek-FI-1xe">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLO-mQ-FfJ">
+                                <rect key="frame" x="467" y="28" width="82" height="32"/>
+                                <buttonCell key="cell" type="push" title="FINISH" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sv5-vP-tcC">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jb-qo-60u">
+                                <rect key="frame" x="19" y="315" width="569" height="66"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Please complete your profile." id="3jD-aY-F1p">
+                                    <font key="font" metaFont="systemThin" size="40"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                 </viewController>

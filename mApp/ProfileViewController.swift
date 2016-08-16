@@ -15,4 +15,7 @@ class ProfileViewController: NSViewController {
         // Do view setup here.
     }
     
+    @IBAction func interestsSelection (sender: NSButton) {
+
+    }
 }
