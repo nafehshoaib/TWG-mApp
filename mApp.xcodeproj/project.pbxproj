@@ -21,6 +21,9 @@
 		FB79C4D81D5E65BB00E056C5 /* MapLocal.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */; };
 		FB79C4DA1D5E661F00E056C5 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4D91D5E661F00E056C5 /* Office.swift */; };
 		FB79C4DE1D6251DB00E056C5 /* loginStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */; };
+		FB79C4E01D6353C600E056C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB79C4DF1D6353C600E056C5 /* MapKit.framework */; };
+		FB79C4E41D635BD000E056C5 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB79C4E21D635BD000E056C5 /* Accounts.framework */; };
+		FB79C4E51D635BD000E056C5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB79C4E31D635BD000E056C5 /* EventKit.framework */; };
 		FBCC5AE31D5A2DB90015D32B /* mainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */; };
 		FBCC5AE51D5A58B20015D32B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCC5AE41D5A58B20015D32B /* Quartz.framework */; };
 		FBCC5AEA1D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */; };
@@ -61,6 +64,10 @@
 		FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocal.plist; path = Resources/MapLocal.plist; sourceTree = "<group>"; };
 		FB79C4D91D5E661F00E056C5 /* Office.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
 		FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginStoryboardSegue.swift; sourceTree = "<group>"; };
+		FB79C4DF1D6353C600E056C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FB79C4E11D6353C600E056C5 /* mApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = mApp.entitlements; sourceTree = "<group>"; };
+		FB79C4E21D635BD000E056C5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FB79C4E31D635BD000E056C5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainWindowController.swift; sourceTree = "<group>"; };
 		FBCC5AE41D5A58B20015D32B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Floorplan_2016.06.25.png.pdf; sourceTree = "<group>"; };
@@ -72,8 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB79C4E41D635BD000E056C5 /* Accounts.framework in Frameworks */,
+				FB79C4E51D635BD000E056C5 /* EventKit.framework in Frameworks */,
 				FBCC5AE51D5A58B20015D32B /* Quartz.framework in Frameworks */,
 				FBCC5AEE1D5B93800015D32B /* Mapbox.framework in Frameworks */,
+				FB79C4E01D6353C600E056C5 /* MapKit.framework in Frameworks */,
 				4B839492C8C78207BA6CF5D6 /* Pods_mApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +121,7 @@
 		FB3F58911D590075002C5078 /* mApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB79C4E11D6353C600E056C5 /* mApp.entitlements */,
 				FB3F58921D590075002C5078 /* AppDelegate.swift */,
 				FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */,
 				FB3F58941D590075002C5078 /* ViewController.swift */,
@@ -134,6 +145,9 @@
 		FBCC5AE61D5A5EF80015D32B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB79C4E21D635BD000E056C5 /* Accounts.framework */,
+				FB79C4E31D635BD000E056C5 /* EventKit.framework */,
+				FB79C4DF1D6353C600E056C5 /* MapKit.framework */,
 				FBCC5AED1D5B93800015D32B /* Mapbox.framework */,
 				FBCC5AE41D5A58B20015D32B /* Quartz.framework */,
 				ABAC3BFE625C92A15FDF1F40 /* Pods_mApp.framework */,
@@ -178,6 +192,11 @@
 					FB3F588E1D590075002C5078 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = G69MVG52LV;
+						SystemCapabilities = {
+							com.apple.Maps.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -381,6 +400,9 @@
 			baseConfigurationReference = AA5A83C491D4A179118B7504 /* Pods-mApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = mApp/mApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twg.mApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -398,6 +421,9 @@
 			baseConfigurationReference = F0389615D93BC719FCE08A3E /* Pods-mApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = mApp/mApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twg.mApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
