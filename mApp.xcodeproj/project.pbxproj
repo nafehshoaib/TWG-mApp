@@ -18,6 +18,7 @@
 		FB3F589A1D590075002C5078 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58981D590075002C5078 /* Document.xcdatamodeld */; };
 		FB3F589C1D590077002C5078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3F589B1D590077002C5078 /* Assets.xcassets */; };
 		FB3F589F1D590077002C5078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3F589D1D590077002C5078 /* Main.storyboard */; };
+		FB4CF98D1D64DB44001FE67B /* TWGMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */; };
 		FB79C4D81D5E65BB00E056C5 /* MapLocal.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */; };
 		FB79C4DA1D5E661F00E056C5 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4D91D5E661F00E056C5 /* Office.swift */; };
 		FB79C4DE1D6251DB00E056C5 /* loginStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */; };
@@ -61,6 +62,7 @@
 		FB3F589B1D590077002C5078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3F589E1D590077002C5078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB3F58A01D590077002C5078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWGMapView.swift; sourceTree = "<group>"; };
 		FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocal.plist; path = Resources/MapLocal.plist; sourceTree = "<group>"; };
 		FB79C4D91D5E661F00E056C5 /* Office.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
 		FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginStoryboardSegue.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				845AA3211D62293E0066D070 /* LoginViewController.swift */,
 				845AA3231D624BF80066D070 /* ProfileViewController.swift */,
 				FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */,
+				FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				845AA3201D620D300066D070 /* OfficeMapOverlayView.swift in Sources */,
 				FB79C4DA1D5E661F00E056C5 /* Office.swift in Sources */,
 				FB3F58931D590075002C5078 /* AppDelegate.swift in Sources */,
+				FB4CF98D1D64DB44001FE67B /* TWGMapView.swift in Sources */,
 				FB3F58971D590075002C5078 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
