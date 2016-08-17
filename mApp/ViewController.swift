@@ -24,9 +24,6 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (!isLoggedIn) {
-            presentViewControllerAsSheet(LoginViewController)
-        }
         //pdfView?.setDocument(doc)
         
         locationTopLeft = office.overlayTopLeftCoordinate
@@ -45,6 +42,16 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         addOverlay()
     }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        displayLogin()
+    }
+    
+    func displayLogin() {
+        let nextViewController = storyboard?.instantiateControllerWithIdentifier("loginVC") as! LoginViewController
+        presentViewControllerAsSheet(nextViewController)
+    }
 
     override var representedObject: AnyObject? {
         didSet {
@@ -56,7 +63,6 @@ class ViewController: NSViewController {
         let overlay = OfficeMapOverlay(office: office)
         mapView?.addOverlay(overlay)
     }
-    
 
 }
 
@@ -71,12 +77,13 @@ extension ViewController: MKMapViewDelegate {
         
         return overlayView
     }
-    
+    /*
     func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         if ((mapView.region.span.latitudeDelta > 5.34343) || (mapView.region.span.longitudeDelta > 22324.23322)) {
             var centreCord: CLLocationCoordinate2D = CLLocationCoordinate2D(locationTopLeft., locationBotRight)
             var spanOfOffice: MKCoordinateRegion =
         }
     }
+     */
 }
 
