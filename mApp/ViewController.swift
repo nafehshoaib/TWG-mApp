@@ -11,6 +11,9 @@ import Quartz
 import MapKit
 
 public var isLoggedIn = false
+public var locationTopLeft: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+public var locationBotRight: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+public var locationCentreCoords: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
 
 class ViewController: NSViewController {
     
@@ -21,7 +24,14 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (!isLoggedIn) {
+            presentViewControllerAsSheet(LoginViewController)
+        }
         //pdfView?.setDocument(doc)
+        
+        locationTopLeft = office.overlayTopLeftCoordinate
+        locationBotRight = office.overlayBottomRightCoordinate
+        locationCentreCoords = office.midCoordinate
         
         let latDelta = office.overlayTopLeftCoordinate.latitude -
             office.overlayBottomRightCoordinate.latitude
@@ -53,12 +63,20 @@ class ViewController: NSViewController {
 // MARK: - Map View delegate
 
 extension ViewController: MKMapViewDelegate {
+    
     // MapOverlay Setup
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         let officeImage = NSImage(named: "FloorPlam")
         let overlayView = OfficeMapOverlayView(overlay: overlay, overlayImage: officeImage!)
         
         return overlayView
+    }
+    
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        if ((mapView.region.span.latitudeDelta > 5.34343) || (mapView.region.span.longitudeDelta > 22324.23322)) {
+            var centreCord: CLLocationCoordinate2D = CLLocationCoordinate2D(locationTopLeft., locationBotRight)
+            var spanOfOffice: MKCoordinateRegion =
+        }
     }
 }
 
