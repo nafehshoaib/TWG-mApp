@@ -15,6 +15,10 @@ class ProfileViewController: NSViewController {
         // Do view setup here.
     }
     
+    override func viewWillAppear() {
+        
+    }
+    
     @IBAction func interestsSelection (sender: NSButton) {
 
     }
@@ -24,6 +28,7 @@ class ProfileViewController: NSViewController {
     }
 
     @IBAction func Back(sender: AnyObject) {
+        //dismissController(LoginViewController)
         self.dismissController(self)
     }
     

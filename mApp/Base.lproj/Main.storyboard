@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="EsA-cq-GjR">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="9Ee-PR-KtR">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -364,9 +364,6 @@
                         <rect key="contentRect" x="294" y="313" width="605" height="421"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
                     </window>
-                    <connections>
-                        <segue destination="XKf-33-qCS" kind="relationship" relationship="window.shadowedContentViewController" id="vC3-Sb-lsA"/>
-                    </connections>
                 </windowController>
                 <customObject id="bvt-Mk-jlf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -414,7 +411,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="zLn-rR-dsN">
-                                    <rect key="frame" x="463" y="1" width="16" height="268"/>
+                                    <rect key="frame" x="464" y="1" width="15" height="268"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -487,21 +484,6 @@
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Maps icon" id="FzC-Jd-6Dt"/>
                             </imageView>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LeA-Zl-bK6">
-                                <rect key="frame" x="368" y="20" width="191" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="O9m-9x-YZx"/>
-                                    <constraint firstAttribute="width" constant="191" id="UK7-1Z-Ixe"/>
-                                </constraints>
-                                <buttonCell key="cell" type="square" title="GET STARTED" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="JZX-qg-Qil">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="GetStarted:" target="XKf-33-qCS" id="MRf-Lx-QFX"/>
-                                    <segue destination="Kn0-aL-zuB" kind="modal" id="LNC-ze-9Su"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-Oc-N7b">
                                 <rect key="frame" x="18" y="313" width="569" height="66"/>
                                 <constraints>
@@ -513,6 +495,20 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LeA-Zl-bK6">
+                                <rect key="frame" x="368" y="20" width="191" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="O9m-9x-YZx"/>
+                                    <constraint firstAttribute="width" constant="191" id="UK7-1Z-Ixe"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="GET STARTED" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="JZX-qg-Qil">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="GetStarted:" target="XKf-33-qCS" id="zzq-MI-gwB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LeA-Zl-bK6" secondAttribute="trailing" constant="46" id="3Pf-pA-ve0"/>
@@ -537,12 +533,12 @@
                 </viewController>
                 <customObject id="fg1-c9-fAx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361.5" y="683.5"/>
+            <point key="canvasLocation" x="2322.5" y="697.5"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="As3-lt-nKO">
             <objects>
-                <viewController id="Kn0-aL-zuB" customClass="ProfileViewController" customModule="mApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="Kn0-aL-zuB" customClass="ProfileViewController" customModule="mApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wKa-BK-d4A">
                         <rect key="frame" x="0.0" y="0.0" width="606" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1067,7 +1063,7 @@
                 </viewController>
                 <customObject id="6mR-hi-N05" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="1245"/>
+            <point key="canvasLocation" x="2323" y="1245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fWh-QE-ZIm">
@@ -1087,12 +1083,11 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="FsW-uD-8rO" id="v23-w1-eCE"/>
-                        <segue destination="9Ee-PR-KtR" kind="show" id="Qi6-m3-E3M"/>
                     </connections>
                 </viewController>
                 <customObject id="0QC-mc-BX4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="971.5"/>
+            <point key="canvasLocation" x="1321" y="1135.5"/>
         </scene>
     </scenes>
     <resources>
