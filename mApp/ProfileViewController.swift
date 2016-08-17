@@ -20,7 +20,11 @@ class ProfileViewController: NSViewController {
     }
     
     @IBAction func FinishButton(sender: AnyObject) {
-        dismissController(self)
+        self.view.window!.close()
     }
 
+    @IBAction func Back(sender: AnyObject) {
+        self.dismissController(self)
+    }
+    
 }
