@@ -17,17 +17,18 @@ class OfficeMapOverlayView: MKOverlayRenderer {
         super.init(overlay: overlay)
     }
     
-    /*
-    override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: NSGraphicsContext) {
+    override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: CGContext) {
+        
+        var imageRect: CGRect = CGRectMake(0, 0, overlayImage.size.width, overlayImage.size.height)
+        let imageReference = overlayImage.CGImageForProposedRect(&imageRect, context: nil, hints: nil)
         
         let theMapRect = overlay.boundingMapRect
         let theRect = rectForMapRect(theMapRect)
-        let imageReference = overlayImage.CGImageForProposedRect(, context: context, hints: nil)
         
-        CGContextScaleCTM(context.CGContext, 1.0, -1.0)
-        CGContextTranslateCTM(context.CGContext, 0.0, -theRect.size.height)
-        CGContextDrawImage(context.CGContext, theRect, imageReference)
+        
+        CGContextScaleCTM(context, 1.0, -1.0)
+        CGContextTranslateCTM(context, 0.0, -theRect.size.height)
+        CGContextDrawImage(context, theRect, imageReference)
     }
-    */
 }
 

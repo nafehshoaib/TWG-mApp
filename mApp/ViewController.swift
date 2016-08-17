@@ -33,6 +33,7 @@ class ViewController: NSViewController {
         
         mapView!.region = region
         // Do any additional setup after loading the view.
+        addOverlay()
     }
 
     override var representedObject: AnyObject? {
@@ -52,9 +53,12 @@ class ViewController: NSViewController {
 // MARK: - Map View delegate
 
 extension ViewController: MKMapViewDelegate {
-    
-
-
-    
+    // MapOverlay Setup
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        let officeImage = NSImage(named: "FloorPlam")
+        let overlayView = OfficeMapOverlayView(overlay: overlay, overlayImage: officeImage!)
+        
+        return overlayView
+    }
 }
 
