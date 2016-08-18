@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>midCoord</key>
-    <string>{34.4248,-118.5971}</string>
-    <key>overlayTopLeftCoord</key>
-    <string>{34.427978,-118.600939}</string>
-    <key>overlayTopRightCoord</key>
-    <string>{34.427978,-118.593272}</string>
-    <key>overlayBottomLeftCoord</key>
-    <string>{34.421633,-118.600939}</string>
+	<key>midCoord</key>
+	<string>{34.4248,-118.5971}</string>
+	<key>overlayTopLeftCoord</key>
+	<string>{34.427978,-118.600939}</string>
+	<key>overlayTopRightCoord</key>
+	<string>{34.427978,-118.593272}</string>
+	<key>overlayBottomLeftCoord</key>
+	<string>{34.421633,-118.600939}</string>
 	<key>boundary</key>
 	<array>
 		<string>{34.4313,-118.59890}</string>
@@ -59,14 +59,14 @@
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.597892</real>
+				<real>-118.597889</real>
 			</dict>
 			<key>Chair 6</key>
 			<dict>
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.598017</real>
+				<real>-118.598014</real>
 			</dict>
 		</dict>
 		<key>Table 2</key>
@@ -97,7 +97,7 @@
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.597281</real>
+				<real>-118.597297</real>
 			</dict>
 			<key>Chair 5</key>
 			<dict>
@@ -156,21 +156,21 @@
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.596789</real>
+				<real>-118.596792</real>
 			</dict>
 			<key>Chair 7</key>
 			<dict>
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.596944</real>
+				<real>-118.596919</real>
 			</dict>
 			<key>Chair 8</key>
 			<dict>
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.597067</real>
+				<real>-118.597044</real>
 			</dict>
 		</dict>
 		<key>Table 4</key>
@@ -222,7 +222,7 @@
 				<key>Lat</key>
 				<real>34.425442</real>
 				<key>Long</key>
-				<real>-118.596331</real>
+				<real>-118.596328</real>
 			</dict>
 			<key>Chair 8</key>
 			<dict>
@@ -230,6 +230,419 @@
 				<real>34.425442</real>
 				<key>Long</key>
 				<real>-118.596453</real>
+			</dict>
+		</dict>
+		<key>Table 5</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>35.425294</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.425192</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.425089</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.425089</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.425192</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>35.425294</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+		</dict>
+		<key>Table 6</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424942</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424842</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424736</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424633</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424633</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424736</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 7</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424842</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 8</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424942</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+		</dict>
+		<key>Table 7</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424439</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424336</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424236</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424028</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424028</real>
+				<key>Long</key>
+				<real>-118.598069</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424736</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 7</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424131</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 8</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424236</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 9</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424336</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+			<key>Chair 10</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424439</real>
+				<key>Long</key>
+				<real>-118.598228</real>
+			</dict>
+		</dict>
+		<key>Table 8</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424817</real>
+				<key>Long</key>
+				<real>-118.597586</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424714</real>
+				<key>Long</key>
+				<real>-118.597586</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424608</real>
+				<key>Long</key>
+				<real>-118.597586</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424608</real>
+				<key>Long</key>
+				<real>-118.597747</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424714</real>
+				<key>Long</key>
+				<real>-118.597747</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424817</real>
+				<key>Long</key>
+				<real>-118.597747</real>
+			</dict>
+		</dict>
+		<key>Table 9</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597847</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597742</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597619</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597486</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597367</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597367</real>
+			</dict>
+			<key>Chair 7</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597486</real>
+			</dict>
+			<key>Chair 8</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597619</real>
+			</dict>
+			<key>Chair 9</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597742</real>
+			</dict>
+			<key>Chair 10</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597847</real>
+			</dict>
+		</dict>
+		<key>Table 10</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597158</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.597031</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.596903</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.596903</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597031</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.597158</real>
+			</dict>
+		</dict>
+		<key>Table 11</key>
+		<dict>
+			<key>Chair 1</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>118.596644</real>
+			</dict>
+			<key>Chair 2</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>118.596522</real>
+			</dict>
+			<key>Chair 3</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.596394</real>
+			</dict>
+			<key>Chair 4</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.596269</real>
+			</dict>
+			<key>Chair 5</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.424119</real>
+				<key>Long</key>
+				<real>-118.596144</real>
+			</dict>
+			<key>Chair 6</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.596144</real>
+			</dict>
+			<key>Chair 7</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.596269</real>
+			</dict>
+			<key>Chair 8</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>-118.596394</real>
+			</dict>
+			<key>Chair 9</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>118.596522</real>
+			</dict>
+			<key>Chair 10</key>
+			<dict>
+				<key>Lat</key>
+				<real>34.423983</real>
+				<key>Long</key>
+				<real>118.596644</real>
 			</dict>
 		</dict>
 	</dict>
