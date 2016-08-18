@@ -30,6 +30,7 @@
 		FBCC5AEA1D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */; };
 		FBCC5AEE1D5B93800015D32B /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCC5AED1D5B93800015D32B /* Mapbox.framework */; };
 		FBCC5AEF1D5B93800015D32B /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBCC5AED1D5B93800015D32B /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FBEC2E151D6631C700E6D749 /* OfficeMapCoordinates.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +75,7 @@
 		FBCC5AE41D5A58B20015D32B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Floorplan_2016.06.25.png.pdf; sourceTree = "<group>"; };
 		FBCC5AED1D5B93800015D32B /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OfficeMapCoordinates.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				845AA3231D624BF80066D070 /* ProfileViewController.swift */,
 				FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */,
 				FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */,
+				FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			files = (
 				FB3F589C1D590077002C5078 /* Assets.xcassets in Resources */,
 				FB79C4D81D5E65BB00E056C5 /* MapLocal.plist in Resources */,
+				FBEC2E151D6631C700E6D749 /* OfficeMapCoordinates.plist in Resources */,
 				FBCC5AEA1D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf in Resources */,
 				FB3F589F1D590077002C5078 /* Main.storyboard in Resources */,
 			);
