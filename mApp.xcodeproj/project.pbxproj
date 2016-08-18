@@ -31,6 +31,7 @@
 		FBCC5AEE1D5B93800015D32B /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCC5AED1D5B93800015D32B /* Mapbox.framework */; };
 		FBCC5AEF1D5B93800015D32B /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBCC5AED1D5B93800015D32B /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FBEC2E151D6631C700E6D749 /* OfficeMapCoordinates.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */; };
+		FBEC2E171D66380800E6D749 /* MapLocal2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEC2E161D66380800E6D749 /* MapLocal2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +77,7 @@
 		FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Floorplan_2016.06.25.png.pdf; sourceTree = "<group>"; };
 		FBCC5AED1D5B93800015D32B /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OfficeMapCoordinates.plist; sourceTree = "<group>"; };
+		FBEC2E161D66380800E6D749 /* MapLocal2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocal2.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */,
 				FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */,
 				FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */,
+				FBEC2E161D66380800E6D749 /* MapLocal2.plist */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEC2E171D66380800E6D749 /* MapLocal2.plist in Resources */,
 				FB3F589C1D590077002C5078 /* Assets.xcassets in Resources */,
 				FB79C4D81D5E65BB00E056C5 /* MapLocal.plist in Resources */,
 				FBEC2E151D6631C700E6D749 /* OfficeMapCoordinates.plist in Resources */,
