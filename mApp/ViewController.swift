@@ -84,8 +84,10 @@ extension ViewController: MKMapViewDelegate {
     /*
     func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         if ((mapView.region.span.latitudeDelta > 5.34343) || (mapView.region.span.longitudeDelta > 22324.23322)) {
-            var centreCord: CLLocationCoordinate2D = CLLocationCoordinate2D(locationTopLeft., locationBotRight)
-            var spanOfOffice: MKCoordinateRegion =
+            //let centerCoord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(-41.162114, 172.836914);
+            let spanOfNZ:MKCoordinateSpan = MKCoordinateSpanMake(13.589921, 14.062500);
+            let NZRegion:MKCoordinateRegion = MKCoordinateRegionMake(centerCoord, spanOfNZ);
+            mapView .setRegion(NZRegion, animated: true);
         }
     }
      */
