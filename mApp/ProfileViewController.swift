@@ -29,7 +29,8 @@ class ProfileViewController: NSViewController {
 
     @IBAction func Back(sender: AnyObject) {
         //dismissController(LoginViewController)
-        self.dismissController(self)
+        let loginVC = storyboard?.instantiateControllerWithIdentifier("loginVC") as! LoginViewController
+        view.window?.contentViewController = loginVC
     }
     
 }

@@ -19,6 +19,7 @@ class LoginViewController: NSViewController {
     @IBAction func GetStarted(sender: AnyObject) {
         let profileVC = storyboard?.instantiateControllerWithIdentifier("ProfileVC") as! ProfileViewController
         view.window?.contentViewController = profileVC
+        isLoggedIn = true
     }
     
     override func viewDidLoad() {

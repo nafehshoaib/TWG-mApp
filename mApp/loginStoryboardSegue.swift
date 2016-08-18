@@ -14,6 +14,11 @@ class loginStoryboardSegue: NSStoryboardSegue {
     }
     
     override func perform() {
-        sourceController.presentViewControllerAsSheet(destinationController as! NSViewController)
+        if let fromViewController = sourceController as? NSViewController {
+            if let toViewController = destinationController as? NSViewController {
+                // no animation.
+                fromViewController.view.window?.contentViewController = toViewController
+            }
+        }
     }
 }

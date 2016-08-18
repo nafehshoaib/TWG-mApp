@@ -45,7 +45,11 @@ class ViewController: NSViewController {
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        displayLogin()
+        if !isLoggedIn {
+            displayLogin()
+        } else {
+            
+        }
     }
     
     func displayLogin() {
