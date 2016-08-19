@@ -9,6 +9,7 @@
 import Cocoa
 import MapKit
 
+/*
 class Employee: MKAnnotationView, MKAnnotation {
     
     var title: String? = "John Appleseed"
@@ -21,7 +22,8 @@ class Employee: MKAnnotationView, MKAnnotation {
     }
     
     init(tableNumber: Int, chairNumber: Int) {
-        coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber, chairNumber: chairNumber)
+        coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber, chairNumber: chairNumber).coordinatesFromSystem
     }
     
 }
+*/

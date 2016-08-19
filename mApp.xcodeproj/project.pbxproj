@@ -34,6 +34,7 @@
 		FBEC2E171D66380800E6D749 /* MapLocal2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEC2E161D66380800E6D749 /* MapLocal2.plist */; };
 		FBEC2E191D67412400E6D749 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC2E181D67412400E6D749 /* Employee.swift */; };
 		FBEC2E1B1D67478400E6D749 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */; };
+		FBEC2E251D676D6000E6D749 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC2E241D676D6000E6D749 /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		FBEC2E161D66380800E6D749 /* MapLocal2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocal2.plist; sourceTree = "<group>"; };
 		FBEC2E181D67412400E6D749 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
+		FBEC2E241D676D6000E6D749 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEC2E251D676D6000E6D749 /* Firebase.framework in Frameworks */,
 				FB79C4E41D635BD000E056C5 /* Accounts.framework in Frameworks */,
 				FB79C4E51D635BD000E056C5 /* EventKit.framework in Frameworks */,
 				FBCC5AE51D5A58B20015D32B /* Quartz.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		FBCC5AE61D5A5EF80015D32B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBEC2E241D676D6000E6D749 /* Firebase.framework */,
 				FB79C4E21D635BD000E056C5 /* Accounts.framework */,
 				FB79C4E31D635BD000E056C5 /* EventKit.framework */,
 				FB79C4DF1D6353C600E056C5 /* MapKit.framework */,
@@ -427,6 +431,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)/build/Debug/FirebaseOSX",
 				);
 				INFOPLIST_FILE = mApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -448,6 +454,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)/build/Debug/FirebaseOSX",
 				);
 				INFOPLIST_FILE = mApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

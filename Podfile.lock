@@ -14,7 +14,7 @@ PODS:
   - Swifter (1.2.6)
 
 DEPENDENCIES:
-  - FirebaseOSX (>= 2.5.1)
+  - FirebaseOSX
   - GTMOAuth2
   - SlackKit
 
@@ -26,6 +26,6 @@ SPEC CHECKSUMS:
   Starscream: d662732354b40dd19ed1ece3e3c44c80b536b83c
   Swifter: c6f13d053398f1e2f209c7a394dfd5e863ae0157
 
-PODFILE CHECKSUM: 220c8b7ec7bc02c2a9f6c8deea9265c230b9c36d
+PODFILE CHECKSUM: 6a78626a9d3f6e2d8ecd74f64c2a74035ae73545
 
 COCOAPODS: 1.0.0
