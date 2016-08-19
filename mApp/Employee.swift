@@ -21,7 +21,7 @@ class Employee: MKAnnotationView, MKAnnotation {
     }
     
     init(tableNumber: Int, chairNumber: Int) {
-        
+        coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber, chairNumber: chairNumber)
     }
     
 }
