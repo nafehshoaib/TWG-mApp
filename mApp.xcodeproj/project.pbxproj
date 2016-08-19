@@ -33,6 +33,7 @@
 		FBEC2E151D6631C700E6D749 /* OfficeMapCoordinates.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */; };
 		FBEC2E171D66380800E6D749 /* MapLocal2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEC2E161D66380800E6D749 /* MapLocal2.plist */; };
 		FBEC2E191D67412400E6D749 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC2E181D67412400E6D749 /* Employee.swift */; };
+		FBEC2E1B1D67478400E6D749 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +81,7 @@
 		FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OfficeMapCoordinates.plist; sourceTree = "<group>"; };
 		FBEC2E161D66380800E6D749 /* MapLocal2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocal2.plist; sourceTree = "<group>"; };
 		FBEC2E181D67412400E6D749 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */,
 				FBEC2E161D66380800E6D749 /* MapLocal2.plist */,
 				FBEC2E181D67412400E6D749 /* Employee.swift */,
+				FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				FBEC2E191D67412400E6D749 /* Employee.swift in Sources */,
 				FB3F58931D590075002C5078 /* AppDelegate.swift in Sources */,
 				FB4CF98D1D64DB44001FE67B /* TWGMapView.swift in Sources */,
+				FBEC2E1B1D67478400E6D749 /* CoordinateSystem.swift in Sources */,
 				FB3F58971D590075002C5078 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

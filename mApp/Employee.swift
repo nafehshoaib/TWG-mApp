@@ -9,17 +9,19 @@
 import Cocoa
 import MapKit
 
-class Employee: MKAnnotationView /*MKAnnotation*/ {
-    
-    
+class Employee: MKAnnotationView, MKAnnotation {
     
     var title: String? = "John Appleseed"
     var subtitle: String?
+    var coordinate: CLLocationCoordinate2D
     
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
-        
         // Drawing code here.
+    }
+    
+    init(tableNumber: Int, chairNumber: Int) {
+        
     }
     
 }
