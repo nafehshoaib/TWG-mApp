@@ -9,5 +9,6 @@ target 'mApp' do
 
   # Pods for mApp
   pod 'SlackKit'
-
+  pod 'FirebaseOSX', '>= 2.5.1'
+  pod 'GTMOAuth2'
 end

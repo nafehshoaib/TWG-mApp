@@ -84,11 +84,17 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/FirebaseOSX/Firebase.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMOAuth2/GTMOAuth2.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SlackKit/SlackKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Starscream/Starscream.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Swifter/Swifter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/FirebaseOSX/Firebase.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMOAuth2/GTMOAuth2.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SlackKit/SlackKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Starscream/Starscream.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Swifter/Swifter.framework"

@@ -1,4 +1,12 @@
 PODS:
+  - FirebaseOSX (2.5.1)
+  - GTMOAuth2 (1.1.2):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.6):
+    - GTMSessionFetcher/Full (= 1.1.6)
+  - GTMSessionFetcher/Core (1.1.6)
+  - GTMSessionFetcher/Full (1.1.6):
+    - GTMSessionFetcher/Core (= 1.1.6)
   - SlackKit (2.0.0):
     - Starscream (~> 1.1.3)
     - Swifter
@@ -6,13 +14,18 @@ PODS:
   - Swifter (1.2.6)
 
 DEPENDENCIES:
+  - FirebaseOSX (>= 2.5.1)
+  - GTMOAuth2
   - SlackKit
 
 SPEC CHECKSUMS:
+  FirebaseOSX: 16300443a18fce7875be772e7f0f259726065258
+  GTMOAuth2: 1707e2f7fe3a6d7240223c23c473ba5a2d104474
+  GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
   SlackKit: bdd2ad0cd22b08da59fac1ba3e390bf19f23dcfe
   Starscream: d662732354b40dd19ed1ece3e3c44c80b536b83c
   Swifter: c6f13d053398f1e2f209c7a394dfd5e863ae0157
 
-PODFILE CHECKSUM: a31bbc8925d7d82e4d0aa53b6ff99a1d7b5fe535
+PODFILE CHECKSUM: 220c8b7ec7bc02c2a9f6c8deea9265c230b9c36d
 
 COCOAPODS: 1.0.0
