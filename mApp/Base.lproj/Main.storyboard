@@ -1058,13 +1058,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="832" height="685"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <mapView fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-uD-8rO">
+                            <mapView mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsZoomControls="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-uD-8rO">
                                 <rect key="frame" x="0.0" y="0.0" width="832" height="685"/>
                                 <connections>
                                     <outlet property="delegate" destination="ux7-r4-qCu" id="9lV-cn-UKM"/>
                                 </connections>
                             </mapView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FsW-uD-8rO" secondAttribute="trailing" id="0sS-xt-jMd"/>
+                            <constraint firstAttribute="bottom" secondItem="FsW-uD-8rO" secondAttribute="bottom" id="FUE-8x-9UI"/>
+                            <constraint firstItem="FsW-uD-8rO" firstAttribute="leading" secondItem="DAK-W9-AsJ" secondAttribute="leading" id="GjY-5S-GqX"/>
+                            <constraint firstItem="FsW-uD-8rO" firstAttribute="top" secondItem="DAK-W9-AsJ" secondAttribute="top" id="Vwy-un-HZY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="FsW-uD-8rO" id="v23-w1-eCE"/>

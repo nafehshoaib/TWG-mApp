@@ -11,27 +11,21 @@ import Quartz
 import MapKit
 
 public var isLoggedIn = false
-public var locationTopLeft: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
-public var locationBotRight: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
-public var locationCentreCoords: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+public var numberOfChairs = (6 * 5) + (8 * 3) + (10 * 3)
 
 class ViewController: NSViewController {
     
     //@IBOutlet var pdfView: PDFView?
     //var doc: PDFDocument = PDFDocument(URL: NSBundle.mainBundle().URLForResource("Floorplan_2016.06.25.png", withExtension: "pdf"))
     @IBOutlet var mapView: MKMapView?
-    var office = Office(filename: "MapLocal")
+    var office = Office(filename: "OfficeMapCoordinates")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //pdfView?.setDocument(doc)
         
-        locationTopLeft = office.overlayTopLeftCoordinate
-        locationBotRight = office.overlayBottomRightCoordinate
-        locationCentreCoords = office.midCoordinate
-        
-        let latDelta = office.overlayTopLeftCoordinate.latitude -
-            office.overlayBottomRightCoordinate.latitude
+        let latDelta = (office.overlayTopLeftCoordinate.latitude -
+            office.overlayBottomRightCoordinate.latitude) / 2.5
         
         // think of a span as a tv size, measure from one corner to another
         let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
@@ -76,11 +70,17 @@ extension ViewController: MKMapViewDelegate {
     
     // MapOverlay Setup
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
-        let officeImage = NSImage(named: "FloorPlam")
+        let officeImage = NSImage(named: "FloorPlan_Edited_WhiteSpace")
         let overlayView = OfficeMapOverlayView(overlay: overlay, overlayImage: officeImage!)
         
         return overlayView
     }
+    
+    /*
+    func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+        mapView.region.span.latitudeDelta = mapView.region.span.latitudeDelta / fabs(0.1)
+    } */
+    
     /*
     func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         if ((mapView.region.span.latitudeDelta > 5.34343) || (mapView.region.span.longitudeDelta > 22324.23322)) {
