@@ -21,24 +21,5 @@ class mainWindowController: NSWindowController {
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
     
-    func loadGoogle() {
-        let frameworkBundle = NSBundle(forClass: GTMOAuth2WindowController.self)
-        let windowController = GTMOAuth2WindowController(scope: "", clientID: "", clientSecret: "", keychainItemName: "", resourceBundle: frameworkBundle)
-        windowController.signInSheetModalForWindow(window, delegate: self, finishedSelector: #selector(mainWindowController.didFinishWithAuth(windowController:auth:error:)))
-    }
     
-    func didFinishWithAuth(windowController wc:GTMOAuth2WindowController, auth: GTMOAuth2Authentication, error: NSError?) {
-        if error != nil {
-            print(error)
-        } else {
-            print(auth)
-            //ref.authWithOAuthProvider("google", token: auth.accessToken, withCompletionBlock: { err, auth in
-               /* if err != nil {
-                    print(err)
-                } else {
-                    print(auth)
-                }
-            }) */
-        }
-    }
 }
