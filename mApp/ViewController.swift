@@ -39,6 +39,10 @@ class ViewController: NSViewController {
         addOverlay()
     }
     
+    @IBAction func searchFieldOne(sender: NSSearchField) {
+        sender.placeholderString = "Hello ITs EM"
+    }
+    
     override func viewDidAppear() {
         super.viewDidAppear()
         if !isLoggedIn {

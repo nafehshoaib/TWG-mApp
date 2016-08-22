@@ -10,13 +10,12 @@ import Cocoa
 //import Firebase
 import GTMOAuth2
 
-class mainWindowController: NSWindowController {
+class mainWindowController: NSWindowController, NSToolbarDelegate {
     
     //let ref = Firebase(url: "")
     
     override func windowDidLoad() {
         super.windowDidLoad()
-        
         window!.titleVisibility = .Hidden
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }

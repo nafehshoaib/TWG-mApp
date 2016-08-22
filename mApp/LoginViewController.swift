@@ -19,8 +19,11 @@ class LoginViewController: NSViewController {
     
     let ref = Firebase(url: "https://xyz.firebaseio.com")
 
-    @IBAction func Gmail(sender: AnyObject) {
+    @IBAction func Gmail(sender: NSButton) {
         loadGoogle()
+        if isLoggedIn {
+            sender.enabled = false
+        }
     }
     
     @IBAction func Slack(sender: AnyObject) {

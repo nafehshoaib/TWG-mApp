@@ -258,7 +258,7 @@
                     <window key="window" title="mApp" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="gKn-Xf-DOG">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="313" width="832" height="592"/>
+                        <rect key="contentRect" x="294" y="312" width="832" height="593"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
                         <toolbar key="toolbar" implicitIdentifier="2A242408-CFD0-4543-B422-A52731A32E3D" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="FeC-kf-pbi">
                             <allowedToolbarItems>
@@ -310,15 +310,22 @@
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="96" height="22"/>
                                     <size key="maxSize" width="312" height="22"/>
-                                    <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" id="WRV-BP-M9n">
+                                    <searchField key="view" identifier="mainSearch" wantsLayer="YES" verticalHuggingPriority="750" id="WRV-BP-M9n">
                                         <rect key="frame" x="0.0" y="14" width="312" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="LCn-tX-LjV">
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Is it me you're looking for?" usesSingleLineMode="YES" bezelStyle="round" id="LCn-tX-LjV">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </searchFieldCell>
+                                        <connections>
+                                            <action selector="searchField:" target="uJz-VK-P8o" id="I4q-iV-mWE"/>
+                                            <outlet property="delegate" destination="EsA-cq-GjR" id="bx2-6F-4vS"/>
+                                        </connections>
                                     </searchField>
+                                    <connections>
+                                        <action selector="searchFieldOne:" target="uJz-VK-P8o" id="zV1-55-pzn"/>
+                                    </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="65471A69-7DF2-4EE0-A953-3970866D6EF1" label="Current Location" paletteLabel="Current Location" image="define_location" id="AKI-P4-eOi">
                                     <nil key="toolTip"/>
@@ -341,8 +348,10 @@
                                 <toolbarItem reference="RRi-oF-b7E"/>
                                 <toolbarItem reference="5v2-Jx-HlY"/>
                                 <toolbarItem reference="7u7-3Y-GWC"/>
-                                <toolbarItem reference="fa1-n3-XMt"/>
                             </defaultToolbarItems>
+                            <connections>
+                                <outlet property="delegate" destination="EsA-cq-GjR" id="yfd-jI-KWO"/>
+                            </connections>
                         </toolbar>
                     </window>
                     <connections>
@@ -351,7 +360,7 @@
                 </windowController>
                 <customObject id="uJz-VK-P8o" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="243"/>
+            <point key="canvasLocation" x="1321" y="242.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="zxI-43-LMU">
