@@ -19,6 +19,7 @@
 		FB3F589C1D590077002C5078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3F589B1D590077002C5078 /* Assets.xcassets */; };
 		FB3F589F1D590077002C5078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3F589D1D590077002C5078 /* Main.storyboard */; };
 		FB43E8A81D6E134D00A9BB87 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = FB43E8A71D6E134D00A9BB87 /* Data.json */; };
+		FB43E8AA1D6E1F6B00A9BB87 /* EmployeeTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43E8A91D6E1F6B00A9BB87 /* EmployeeTemp.swift */; };
 		FB4CF98D1D64DB44001FE67B /* TWGMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */; };
 		FB79C4D81D5E65BB00E056C5 /* MapLocal.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */; };
 		FB79C4DA1D5E661F00E056C5 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C4D91D5E661F00E056C5 /* Office.swift */; };
@@ -70,6 +71,7 @@
 		FB3F589E1D590077002C5078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB3F58A01D590077002C5078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB43E8A71D6E134D00A9BB87 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		FB43E8A91D6E1F6B00A9BB87 /* EmployeeTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeeTemp.swift; path = mApp/EmployeeTemp.swift; sourceTree = "<group>"; };
 		FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWGMapView.swift; sourceTree = "<group>"; };
 		FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocal.plist; path = Resources/MapLocal.plist; sourceTree = "<group>"; };
 		FB79C4D91D5E661F00E056C5 /* Office.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		FB3F58861D590075002C5078 = {
 			isa = PBXGroup;
 			children = (
+				FB43E8A91D6E1F6B00A9BB87 /* EmployeeTemp.swift */,
 				FB3F58911D590075002C5078 /* mApp */,
 				FBCC5AE61D5A5EF80015D32B /* Frameworks */,
 				FB3F58901D590075002C5078 /* Products */,
@@ -316,6 +319,7 @@
 				845AA3221D62293E0066D070 /* LoginViewController.swift in Sources */,
 				FBCC5AE31D5A2DB90015D32B /* mainWindowController.swift in Sources */,
 				FB79C4DE1D6251DB00E056C5 /* loginStoryboardSegue.swift in Sources */,
+				FB43E8AA1D6E1F6B00A9BB87 /* EmployeeTemp.swift in Sources */,
 				845AA3241D624BF90066D070 /* ProfileViewController.swift in Sources */,
 				845AA31E1D620BC70066D070 /* OfficeMapOverlay.swift in Sources */,
 				FBEC2EE41D6CD81B00E6D749 /* RESTApi.swift in Sources */,
