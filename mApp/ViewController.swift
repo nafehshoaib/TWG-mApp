@@ -10,6 +10,7 @@ import Cocoa
 import Quartz
 import MapKit
 
+
 public var isLoggedIn = false
 public var numberOfChairs = (6 * 5) + (8 * 3) + (10 * 3)
 
@@ -37,6 +38,15 @@ class ViewController: NSViewController {
         mapView!.region = region
         // Do any additional setup after loading the view.
         addOverlay()
+        
+        
+        // show artwork on map
+        let employee = Employee(title_: "Twinkle Mehta",
+        interests: "Books, Movies, Music",
+        skills: "C++, Swift, Python",
+        coordinate: CLLocationCoordinate2D(latitude: 34.424714, longitude: -118.597747))
+        
+        mapView!.addAnnotation(employee)
     }
     
     @IBAction func searchFieldOne(sender: NSSearchField) {
@@ -82,6 +92,25 @@ extension ViewController: MKMapViewDelegate {
         return overlayView
     }
     
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        if let annotation = annotation as? Employee {
+            let identifier = "pin"
+            var view: MKPinAnnotationView
+            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+                as? MKPinAnnotationView { // 2
+                dequeuedView.annotation = annotation
+                view = dequeuedView
+            } else {
+                // 3
+                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.canShowCallout = true
+                view.calloutOffset = CGPoint(x: -5, y: 5)
+            }
+            return view
+        }
+        return nil
+    }
+
     /*
     func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
         mapView.region.span.latitudeDelta = mapView.region.span.latitudeDelta / fabs(0.1)

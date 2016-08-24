@@ -210,7 +210,7 @@
 				TargetAttributes = {
 					FB3F588E1D590075002C5078 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = G69MVG52LV;
+						DevelopmentTeam = E34R2VP7FN;
 						SystemCapabilities = {
 							com.apple.Maps.Mac = {
 								enabled = 1;
