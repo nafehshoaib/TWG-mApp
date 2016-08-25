@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8A00D96643150194EA00D8835153FDEB'
+               BlueprintIdentifier = 'E284C4A8040EC7FEC5756B642A9494D5'
                BlueprintName = 'Pods-mApp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-mApp.framework'>

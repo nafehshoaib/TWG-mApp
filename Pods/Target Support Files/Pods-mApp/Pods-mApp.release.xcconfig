@@ -1,10 +1,10 @@
 CODE_SIGN_IDENTITY =
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FirebaseOSX" "$PODS_CONFIGURATION_BUILD_DIR/GTMOAuth2" "$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher" "$PODS_CONFIGURATION_BUILD_DIR/SlackKit" "$PODS_CONFIGURATION_BUILD_DIR/Starscream" "$PODS_CONFIGURATION_BUILD_DIR/Swifter"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FirebaseOSX" "$PODS_CONFIGURATION_BUILD_DIR/GTMOAuth2" "$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher" "$PODS_CONFIGURATION_BUILD_DIR/Siesta" "$PODS_CONFIGURATION_BUILD_DIR/SlackKit" "$PODS_CONFIGURATION_BUILD_DIR/Starscream" "$PODS_CONFIGURATION_BUILD_DIR/Swifter"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) GTM_OAUTH2_USE_FRAMEWORK_IMPORTS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FirebaseOSX/Firebase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/GTMOAuth2/GTMOAuth2.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher/GTMSessionFetcher.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SlackKit/SlackKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Starscream/Starscream.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Swifter/Swifter.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "Firebase" -framework "GTMOAuth2" -framework "GTMSessionFetcher" -framework "SlackKit" -framework "Starscream" -framework "Swifter"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FirebaseOSX/Firebase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/GTMOAuth2/GTMOAuth2.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher/GTMSessionFetcher.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Siesta/Siesta.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SlackKit/SlackKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Starscream/Starscream.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Swifter/Swifter.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "Firebase" -framework "GTMOAuth2" -framework "GTMSessionFetcher" -framework "Siesta" -framework "SlackKit" -framework "Starscream" -framework "Swifter"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

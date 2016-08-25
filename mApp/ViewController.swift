@@ -9,7 +9,7 @@
 import Cocoa
 import Quartz
 import MapKit
-
+import Siesta
 
 public var isLoggedIn = false
 public var numberOfChairs = (6 * 5) + (8 * 3) + (10 * 3)
@@ -21,6 +21,8 @@ class ViewController: NSViewController {
     //var doc: PDFDocument = PDFDocument(URL: NSBundle.mainBundle().URLForResource("Floorplan_2016.06.25.png", withExtension: "pdf"))
     @IBOutlet var mapView: MKMapView?
     var office = Office(filename: "OfficeMapCoordinates")
+    let firebase = Service(baseURL: "http://mapps-31c97.firebaseio.com/", useDefaultTransformers: true)
+    
     
     override func viewDidLoad() {
         
@@ -39,14 +41,12 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         addOverlay()
         
-        
-        // show artwork on map
-        let employee = Employee(title_: "Twinkle Mehta",
-        interests: "Books, Movies, Music",
-        skills: "C++, Swift, Python",
-        coordinate: CLLocationCoordinate2D(latitude: 34.424714, longitude: -118.597747))
-        
-        mapView!.addAnnotation(employee)
+        // add Annotations
+        let data = firebase.resource("")
+        data.load()
+        for i in 0...numberOfChairs-1 {
+            let child = data.child(String(i) + ".json")
+        }
     }
     
     @IBAction func searchFieldOne(sender: NSSearchField) {
