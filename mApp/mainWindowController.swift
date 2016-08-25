@@ -13,6 +13,7 @@ import GTMOAuth2
 class mainWindowController: NSWindowController, NSToolbarDelegate {
     
     //let ref = Firebase(url: "")
+    @IBOutlet weak var Toolbar: NSToolbar!
     
     override func windowDidLoad() {
         super.windowDidLoad()
