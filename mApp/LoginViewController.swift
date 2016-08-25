@@ -26,8 +26,10 @@ class LoginViewController: NSViewController {
         }
     }
 
-    @IBAction func Slack(sender: AnyObject) {
+    @IBAction func Name(sender: NSTextField) {
+        
     }
+    
     
     @IBAction func GetStarted(sender: AnyObject) {
         let profileVC = storyboard?.instantiateControllerWithIdentifier("ProfileVC") as! ProfileViewController
