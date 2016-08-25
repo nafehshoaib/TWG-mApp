@@ -19,12 +19,27 @@ class Employee: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
     
     required init(firstName: String?, lastName: String?, position: String?, email: String?, skills: String?, interests: String?, tableNumber: Int?, chairNumber: Int?) {
-        self.title = firstName! + " " + lastName!
-        self.subtitle = position
+        if (firstName != nil) && (lastName != nil) {
+            self.title = firstName! + " " + lastName!
+        } else if firstName != nil {
+            self.title = firstName
+        } else {
+            self.title = "Hello"
+        }
+        if position != nil {
+            self.subtitle = position
+        } else {
+            self.subtitle = "No position added"
+        }
         self.skills = skills
         self.interests = interests
         self.email = email
-        self.coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber!, chairNumber: chairNumber!).coordinatesFromSystem
+        let coordinateSus = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber!, chairNumber: chairNumber!)
+        self.coordinate = coordinateSus.coordinatesFromSystem
+    }
+    
+    var subtitle_: String {
+        return subtitle!
     }
     
 }

@@ -21,10 +21,13 @@ class CoordinateSystem {
         let table = poi["Table " + String(tableNumber)] as! NSDictionary
         let chair: NSDictionary = table["Chair " + String(chairNumber)] as! NSDictionary
         
-        let psuedoCoordinates: String = "{" + (String(chair["Lat"] as! Int)) + "," + (String(chair["Long"] as! Int)) + "}"
+        let coordsLat = chair["Lat"] as! Double
+        let coordsLong = chair["Long"] as! Double
         
-        let psuedoPoint: NSPoint = NSPointFromString(psuedoCoordinates)
+        //let psuedoCoordinates: String = "{" + (String(chair["Lat"] as! Float)) + "," + (String(chair["Long"] as! Float)) + "}"
         
-        coordinatesFromSystem = CLLocationCoordinate2DMake(CLLocationDegrees(psuedoPoint.x), CLLocationDegrees(psuedoPoint.y))
+        //let psuedoPoint: NSPoint = NSPointFromString(psuedoCoordinates)
+        
+        coordinatesFromSystem = CLLocationCoordinate2DMake(CLLocationDegrees(coordsLat), CLLocationDegrees(coordsLong))
     }
 }
