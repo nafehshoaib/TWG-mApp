@@ -11,4 +11,5 @@ target 'mApp' do
   pod 'SlackKit'
   pod 'FirebaseOSX'
   pod 'GTMOAuth2'
+  pod 'Siesta', '1.0-beta.9'
 end

@@ -12,39 +12,17 @@ import MapKit
 class Employee: NSObject, MKAnnotation {
     
     let title: String?
+    let subtitle: String?
     let interests: String
     let skills: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title_: String, interests: String, skills: String, coordinate: CLLocationCoordinate2D) {
-        self.title = title_
-        self.interests = interests
+    required init(firstName: String, lastName: String, position: String, skills: String, interests: String, tableNumber: Int, chairNumber: Int) {
+        self.title = firstName + " " + lastName
+        self.subtitle = position
         self.skills = skills
-        self.coordinate = coordinate
-        
-        super.init()
+        self.interests = interests
+        self.coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber, chairNumber: chairNumber).coordinatesFromSystem
     }
     
-    var subtitle: String? {
-        return interests
-    }
-
 }
-
-
-
-/*
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
-        // Drawing code here.
-    }
-    
-    init(tableNumber: Int, chairNumber: Int) {
-        coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber, chairNumber: chairNumber).coordinatesFromSystem
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-*/
