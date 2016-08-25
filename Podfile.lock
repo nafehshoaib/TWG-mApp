@@ -15,12 +15,14 @@ PODS:
     - Swifter
   - Starscream (1.1.3)
   - Swifter (1.2.6)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - FirebaseOSX
   - GTMOAuth2
   - Siesta (= 1.0-beta.9)
   - SlackKit
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   FirebaseOSX: 16300443a18fce7875be772e7f0f259726065258
@@ -30,7 +32,8 @@ SPEC CHECKSUMS:
   SlackKit: bdd2ad0cd22b08da59fac1ba3e390bf19f23dcfe
   Starscream: d662732354b40dd19ed1ece3e3c44c80b536b83c
   Swifter: c6f13d053398f1e2f209c7a394dfd5e863ae0157
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 79d57261bb54c95f2e94ab23395fbf60dffc63ac
+PODFILE CHECKSUM: 5b105da84b8013417135df8c3eb81d10e301edaa
 
 COCOAPODS: 1.0.0

@@ -13,16 +13,18 @@ class Employee: NSObject, MKAnnotation {
     
     let title: String?
     let subtitle: String?
-    let interests: String
-    let skills: String
+    let interests: String?
+    let skills: String?
+    let email: String?
     let coordinate: CLLocationCoordinate2D
     
-    required init(firstName: String, lastName: String, position: String, skills: String, interests: String, tableNumber: Int, chairNumber: Int) {
-        self.title = firstName + " " + lastName
+    required init(firstName: String?, lastName: String?, position: String?, email: String?, skills: String?, interests: String?, tableNumber: Int?, chairNumber: Int?) {
+        self.title = firstName! + " " + lastName!
         self.subtitle = position
         self.skills = skills
         self.interests = interests
-        self.coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber, chairNumber: chairNumber).coordinatesFromSystem
+        self.email = email
+        self.coordinate = CoordinateSystem(filename: "OfficeMapCoordinates", tableNumber: tableNumber!, chairNumber: chairNumber!).coordinatesFromSystem
     }
     
 }
