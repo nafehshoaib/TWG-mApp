@@ -14,6 +14,7 @@ import Siesta
 public var isLoggedIn = false
 public var numberOfChairs = (6 * 5) + (8 * 3) + (10 * 3)
 
+
 class ViewController: NSViewController {
     
     
@@ -21,7 +22,7 @@ class ViewController: NSViewController {
     //var doc: PDFDocument = PDFDocument(URL: NSBundle.mainBundle().URLForResource("Floorplan_2016.06.25.png", withExtension: "pdf"))
     @IBOutlet var mapView: MKMapView?
     var office = Office(filename: "OfficeMapCoordinates")
-    let firebase = Service(baseURL: "http://mapps-31c97.firebaseio.com/", useDefaultTransformers: true)
+    let firebase = Service(baseURL: "https://mapps-31c97.firebaseio.com/", useDefaultTransformers: true)
     
     
     override func viewDidLoad() {
@@ -42,12 +43,26 @@ class ViewController: NSViewController {
         addOverlay()
         
         // add Annotations
+        var employees: [Employee] = []
+        
         let data = firebase.resource("")
         data.load()
+        print("\(data.jsonDict)")
         for i in 0...numberOfChairs-1 {
-            let child = data.child(String(i) + ".json").jsonDict
+            let child = data.child(String(i)).jsonDict
+            let firstName: String? = child["First Name"] as? String
+            let lastName: String? = child["Last Name"] as? String
+            let title: String? = child["Title"] as? String
+            let email: String? = child["Emai"] as? String
+            let interests: String? = child["Interests"] as? String
+            let skills: String? = child["Skills"] as? String
+            let tableNumber = child["Table Number"] as? Int
+            let seatNumber = child["Seat Number"] as? Int
             
+            let person = Employee(firstName: firstName, lastName: lastName, position: title, email: email, skills: skills, interests: interests, tableNumber: tableNumber, chairNumber: seatNumber)
+            employees.append(person)
         }
+        mapView?.addAnnotations(employees)
     }
     
     @IBAction func searchFieldOne(sender: NSSearchField) {

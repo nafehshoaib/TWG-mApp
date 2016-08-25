@@ -12,4 +12,5 @@ target 'mApp' do
   pod 'FirebaseOSX'
   pod 'GTMOAuth2'
   pod 'Siesta', '1.0-beta.9'
+  pod 'SwiftyJSON'
 end
