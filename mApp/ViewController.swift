@@ -45,7 +45,8 @@ class ViewController: NSViewController {
         let data = firebase.resource("")
         data.load()
         for i in 0...numberOfChairs-1 {
-            let child = data.child(String(i) + ".json")
+            let child = data.child(String(i) + ".json").jsonDict
+            
         }
     }
     
