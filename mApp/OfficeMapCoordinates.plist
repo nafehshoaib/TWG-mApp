@@ -362,7 +362,7 @@
 			<key>Chair 4</key>
 			<dict>
 				<key>Lat</key>
-				<real>34.424028</real>
+				<real>34.424131</real>
 				<key>Long</key>
 				<real>-118.598069</real>
 			</dict>
@@ -376,7 +376,7 @@
 			<key>Chair 6</key>
 			<dict>
 				<key>Lat</key>
-				<real>34.424736</real>
+				<real>34.424028</real>
 				<key>Long</key>
 				<real>-118.598228</real>
 			</dict>
@@ -579,7 +579,7 @@
 				<key>Lat</key>
 				<real>34.424119</real>
 				<key>Long</key>
-				<real>118.596644</real>
+				<real>-118.596644</real>
 			</dict>
 			<key>Chair 2</key>
 			<dict>
@@ -635,14 +635,14 @@
 				<key>Lat</key>
 				<real>34.423983</real>
 				<key>Long</key>
-				<real>118.596522</real>
+				<real>-118.596522</real>
 			</dict>
 			<key>Chair 10</key>
 			<dict>
 				<key>Lat</key>
 				<real>34.423983</real>
 				<key>Long</key>
-				<real>118.596644</real>
+				<real>-118.596644</real>
 			</dict>
 		</dict>
 	</dict>

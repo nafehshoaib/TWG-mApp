@@ -24,7 +24,7 @@ class ViewController: NSViewController {
     var office = Office(filename: "OfficeMapCoordinates")
     let firebase = Service(baseURL: "https://mapps-31c97.firebaseio.com/", useDefaultTransformers: true)
     let isUsingFirebase = false
-    let isUsingJSON = false
+    let isUsingJSON = true
     let jsonFile = NSBundle.mainBundle().pathForResource("Data", ofType: "json")!
     let jsonLink = NSURL(string: "https://www.dropbox.com/s/0na2kd287r8lrn5/Data.json?dl=0")
     
@@ -78,7 +78,7 @@ class ViewController: NSViewController {
                 tableNumber = child["Table Number"] as? Int
                 seatNumber = child["Seat Number"] as? Int
             } else if isUsingJSON {
-                let childJSON = json[i+1]
+                let childJSON = json[String(i+1)]
                 firstName = childJSON["First Name"].stringValue
                 lastName = childJSON["Last Name"].stringValue
                 title = childJSON["Title"].stringValue
@@ -87,17 +87,18 @@ class ViewController: NSViewController {
                 skills = childJSON["Skills"].stringValue
                 tableNumber = childJSON["Table Number"].intValue
                 seatNumber = childJSON["Seat Number"].intValue
-            } else {
-                let childList = properties[String(i+1)] as! NSDictionary
-                firstName = childList["First Name"] as? String
-                lastName = childList["Last Name"] as? String
-                title = childList["Title"] as? String
-                email = childList["Emai"] as? String
-                interests = childList["Interests"] as? String
-                skills = childList["Skills"] as? String
-                tableNumber = childList["Table Number"] as? Int
-                seatNumber = childList["Seat Number"] as? Int
             }
+//            else {
+//                let childList = properties[String(i+1)] as! NSDictionary
+//                firstName = childList["First Name"] as? String
+//                lastName = childList["Last Name"] as? String
+//                title = childList["Title"] as? String
+//                email = childList["Emai"] as? String
+//                interests = childList["Interests"] as? String
+//                skills = childList["Skills"] as? String
+//                tableNumber = childList["Table Number"] as? Int
+//                seatNumber = childList["Seat Number"] as? Int
+//            }
             
             let person = Employee(firstName: firstName, lastName: lastName, position: title, email: email, skills: skills, interests: interests, tableNumber: tableNumber, chairNumber: seatNumber)
             employees.append(person)
@@ -165,6 +166,10 @@ extension ViewController: MKMapViewDelegate {
             return view
         }
         return nil
+    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        var customView = EmployeeView
     }
 
     /*
