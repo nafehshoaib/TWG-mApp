@@ -1,16 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-        </view>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="EmployeeView" customModule="mApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="246" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-uZ-IQW" customClass="ProfileImageView" customModule="mApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="61" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ogL-PD-Vpr"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NafehS" id="6kB-Aq-zic"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView distribution="fillProportionally" orientation="vertical" alignment="leading" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e67-S3-gH0">
+                    <rect key="frame" x="128" y="56" width="98" height="105"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sKg-hk-J87">
+                            <rect key="frame" x="-2" y="86" width="102" height="19"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Nafeh Shoaib" id="DRA-hG-wyZ">
+                                <font key="font" metaFont="system" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CGs-VH-k7h">
+                            <rect key="frame" x="-2" y="58" width="74" height="16"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SHAD Intern" id="vj8-Wb-qPf">
+                                <font key="font" metaFont="system" size="12"/>
+                                <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HD4-8d-ngk">
+                            <rect key="frame" x="-2" y="29" width="40" height="17"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Skills:" id="Stj-ha-3TD">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="UqG-vA-06H">
+                            <rect key="frame" x="-2" y="0.0" width="61" height="17"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Interests:" id="jZ5-VD-o2e">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="33j-fY-ZCc">
+                    <rect key="frame" x="14" y="13" width="73" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VF2-I8-0R2"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Email" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yds-Uh-CuK">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="emailButton:" target="c22-O7-iKe" id="taQ-pB-nsI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="e67-S3-gH0" firstAttribute="leading" secondItem="eM5-uZ-IQW" secondAttribute="trailing" constant="8" symbolic="YES" id="1AQ-Iu-eFb"/>
+                <constraint firstItem="eM5-uZ-IQW" firstAttribute="leading" secondItem="33j-fY-ZCc" secondAttribute="leading" id="GjY-no-FSI"/>
+                <constraint firstAttribute="bottom" secondItem="e67-S3-gH0" secondAttribute="bottom" constant="56" id="Md7-HX-hya"/>
+                <constraint firstAttribute="bottom" secondItem="33j-fY-ZCc" secondAttribute="bottom" constant="20" symbolic="YES" id="PzA-ro-z3b"/>
+                <constraint firstItem="eM5-uZ-IQW" firstAttribute="top" secondItem="e67-S3-gH0" secondAttribute="top" id="RMf-W7-hO9"/>
+                <constraint firstItem="eM5-uZ-IQW" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" symbolic="YES" id="XWs-hn-zjO"/>
+                <constraint firstItem="33j-fY-ZCc" firstAttribute="top" secondItem="eM5-uZ-IQW" secondAttribute="bottom" constant="20" symbolic="YES" id="jva-lX-IMo"/>
+                <constraint firstItem="eM5-uZ-IQW" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="mY6-Vh-tvW"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="eM5-uZ-IQW" id="58u-V0-PR8"/>
+                <outlet property="interests" destination="UqG-vA-06H" id="0E9-Tv-L0J"/>
+                <outlet property="name" destination="sKg-hk-J87" id="JTb-tg-rNv"/>
+                <outlet property="position" destination="CGs-VH-k7h" id="Li6-UY-jSE"/>
+                <outlet property="skills" destination="HD4-8d-ngk" id="YTR-Sc-sA2"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="212.5"/>
+        </customView>
     </objects>
+    <resources>
+        <image name="NafehS" width="960" height="960"/>
+    </resources>
 </document>

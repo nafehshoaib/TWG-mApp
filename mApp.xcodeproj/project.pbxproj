@@ -15,7 +15,8 @@
 		FB2402D51D6F5FEB001B8262 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2402D41D6F5FEB001B8262 /* TestData.swift */; };
 		FB2402D71D6F69A8001B8262 /* DataP.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2402D61D6F69A8001B8262 /* DataP.plist */; };
 		FB2402D91D6F8796001B8262 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2402D81D6F8796001B8262 /* EmployeeView.swift */; };
-		FB2402DB1D70139F001B8262 /* EmployeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2402DA1D70139F001B8262 /* EmployeeView.xib */; };
+		FB2402DD1D70144E001B8262 /* EmployeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2402DC1D70144E001B8262 /* EmployeeView.xib */; };
+		FB2402DF1D701D0E001B8262 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2402DE1D701D0E001B8262 /* ProfileImageView.swift */; };
 		FB3F58931D590075002C5078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58921D590075002C5078 /* AppDelegate.swift */; };
 		FB3F58951D590075002C5078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58941D590075002C5078 /* ViewController.swift */; };
 		FB3F58971D590075002C5078 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F58961D590075002C5078 /* Document.swift */; };
@@ -68,7 +69,8 @@
 		FB2402D41D6F5FEB001B8262 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		FB2402D61D6F69A8001B8262 /* DataP.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataP.plist; sourceTree = "<group>"; };
 		FB2402D81D6F8796001B8262 /* EmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
-		FB2402DA1D70139F001B8262 /* EmployeeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeView.xib; sourceTree = "<group>"; };
+		FB2402DC1D70144E001B8262 /* EmployeeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeView.xib; sourceTree = "<group>"; };
+		FB2402DE1D701D0E001B8262 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		FB3F588F1D590075002C5078 /* mApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3F58921D590075002C5078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3F58941D590075002C5078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,7 +175,8 @@
 				FB2402D41D6F5FEB001B8262 /* TestData.swift */,
 				FB2402D61D6F69A8001B8262 /* DataP.plist */,
 				FB2402D81D6F8796001B8262 /* EmployeeView.swift */,
-				FB2402DA1D70139F001B8262 /* EmployeeView.xib */,
+				FB2402DE1D701D0E001B8262 /* ProfileImageView.swift */,
+				FB2402DC1D70144E001B8262 /* EmployeeView.xib */,
 			);
 			path = mApp;
 			sourceTree = "<group>";
@@ -266,7 +269,7 @@
 				FBEC2E151D6631C700E6D749 /* OfficeMapCoordinates.plist in Resources */,
 				FB43E8A81D6E134D00A9BB87 /* Data.json in Resources */,
 				FBCC5AEA1D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf in Resources */,
-				FB2402DB1D70139F001B8262 /* EmployeeView.xib in Resources */,
+				FB2402DD1D70144E001B8262 /* EmployeeView.xib in Resources */,
 				FB3F589F1D590077002C5078 /* Main.storyboard in Resources */,
 				FB2402D71D6F69A8001B8262 /* DataP.plist in Resources */,
 			);
@@ -333,6 +336,7 @@
 				FB2402D51D6F5FEB001B8262 /* TestData.swift in Sources */,
 				845AA3241D624BF90066D070 /* ProfileViewController.swift in Sources */,
 				845AA31E1D620BC70066D070 /* OfficeMapOverlay.swift in Sources */,
+				FB2402DF1D701D0E001B8262 /* ProfileImageView.swift in Sources */,
 				FBEC2EE41D6CD81B00E6D749 /* RESTApi.swift in Sources */,
 				FB3F589A1D590075002C5078 /* Document.xcdatamodeld in Sources */,
 				FB3F58951D590075002C5078 /* ViewController.swift in Sources */,

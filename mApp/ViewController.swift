@@ -169,7 +169,15 @@ extension ViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        var objects: NSArray?
         var customView = EmployeeView()
+        let employeeAnnotation = view.annotation as! Employee
+        customView.name?.stringValue = employeeAnnotation.title!
+        customView.position?.stringValue = employeeAnnotation.subtitle_
+        customView.skills?.stringValue = employeeAnnotation.skills!
+        customView.interests?.stringValue = employeeAnnotation.interests!
+        customView.email = employeeAnnotation.email!
+        view.addSubview(customView)
     }
 
     /*
