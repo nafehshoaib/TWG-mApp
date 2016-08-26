@@ -41,7 +41,43 @@ class ViewController: NSViewController {
         mapView!.region = region
         // Do any additional setup after loading the view.
         addOverlay()
+        // show Twinkle on map
+        var employees: [Employee] = []
         
+        let twinkle = Employee(title: "Twinkle. M",
+            subtitle: "SHAD Intern",
+            coordinate: CLLocationCoordinate2D(latitude: 34.424714, longitude: -118.597586))
+        employees.append(twinkle)
+        
+        let andrew = Employee(title: "Andrew. K",
+            subtitle: "SHAD Intern",
+            coordinate: CLLocationCoordinate2D(latitude: 34.424817, longitude: -118.597586))
+        employees.append(andrew)
+        
+        let nafeh = Employee(title: "Nafeh. S",
+            subtitle: "SHAD Intern",
+            coordinate: CLLocationCoordinate2D(latitude: 34.424608, longitude: -118.597586))
+        employees.append(nafeh)
+        
+        let katherine = Employee(title: "Katherine",
+             subtitle: "SHAD Intern",
+             coordinate: CLLocationCoordinate2D(latitude: 34.424608, longitude: -118.597747))
+        employees.append(katherine)
+        
+        let annie = Employee(title: "Annie. T",
+             subtitle: "SHAD Intern",
+             coordinate: CLLocationCoordinate2D(latitude: 34.424714, longitude: -118.597747))
+        employees.append(annie)
+        
+        let aashmika = Employee(title: "Aashmika. M",
+              subtitle: "SHAD Intern",
+              coordinate: CLLocationCoordinate2D(latitude: 34.424608, longitude: -118.597747))
+        employees.append(aashmika)
+        
+        
+        mapView?.addAnnotations(employees)
+        
+/*
         // add Annotations
         var employees: [Employee] = []
         
@@ -63,8 +99,9 @@ class ViewController: NSViewController {
             employees.append(person)
         }
         mapView?.addAnnotations(employees)
+ */
     }
-    
+
     @IBAction func searchFieldOne(sender: NSSearchField) {
         sender.placeholderString = "Hello ITs EM"
     }
