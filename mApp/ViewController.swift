@@ -169,7 +169,7 @@ extension ViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        var customView = EmployeeView
+        var customView = EmployeeView()
     }
 
     /*
