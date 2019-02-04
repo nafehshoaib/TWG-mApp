@@ -9,6 +9,7 @@
 import Cocoa
 import MapKit
 
+// Custom Employee model class
 class Employee: NSObject, MKAnnotation {
     
     let title: String?

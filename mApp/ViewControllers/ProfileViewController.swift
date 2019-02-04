@@ -26,7 +26,8 @@ class ProfileViewController: NSViewController {
     @IBAction func FinishButton(sender: AnyObject) {
         self.view.window!.close()
     }
-
+    
+    // Back button to go back to LoginViewController
     @IBAction func Back(sender: AnyObject) {
         //dismissController(LoginViewController)
         let loginVC = storyboard?.instantiateControllerWithIdentifier("loginVC") as! LoginViewController

@@ -40,7 +40,7 @@ class Office {
     
     var name: String?
     
-    
+    // Populate vars to later be used in map formation, by loading from a given pList
     init(filename: String) {
         let filePath = NSBundle.mainBundle().pathForResource(filename, ofType: "plist")
         let properties = NSDictionary(contentsOfFile: filePath!)

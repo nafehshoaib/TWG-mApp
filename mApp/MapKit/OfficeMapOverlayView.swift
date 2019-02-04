@@ -17,6 +17,7 @@ class OfficeMapOverlayView: MKOverlayRenderer {
         super.init(overlay: overlay)
     }
     
+    // draw map using overlay image
     override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: CGContext) {
         
         var imageRect: CGRect = CGRectMake(0, 0, overlayImage.size.width, overlayImage.size.height)

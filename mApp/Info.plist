@@ -91,16 +91,12 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1IjoibmFmZWhzaG9haWIiLCJhIjoiY2lycDAxdHVmMGU4eHQxbmt3dXltY3JhayJ9.HVc728CKdGELGTQ_ADwMTg</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2016 nafehshoaib. All rights reserved.</string>
-	<key>NSMainStoryboardFile</key>
-	<string>Main</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -118,5 +114,11 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2016 nafehshoaib. All rights reserved.</string>
+	<key>NSMainStoryboardFile</key>
+	<string>Main</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
 </dict>
 </plist>

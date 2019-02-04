@@ -67,7 +67,7 @@
 		ABAC3BFE625C92A15FDF1F40 /* Pods_mApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0389615D93BC719FCE08A3E /* Pods-mApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-mApp/Pods-mApp.release.xcconfig"; sourceTree = "<group>"; };
 		FB2402D41D6F5FEB001B8262 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
-		FB2402D61D6F69A8001B8262 /* DataP.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataP.plist; sourceTree = "<group>"; };
+		FB2402D61D6F69A8001B8262 /* DataP.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = DataP.plist; sourceTree = "<group>"; };
 		FB2402D81D6F8796001B8262 /* EmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
 		FB2402DC1D70144E001B8262 /* EmployeeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeView.xib; sourceTree = "<group>"; };
 		FB2402DE1D701D0E001B8262 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		FB3F58A01D590077002C5078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB43E8A71D6E134D00A9BB87 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWGMapView.swift; sourceTree = "<group>"; };
-		FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocal.plist; path = Resources/MapLocal.plist; sourceTree = "<group>"; };
+		FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocal.plist; sourceTree = "<group>"; };
 		FB79C4D91D5E661F00E056C5 /* Office.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
 		FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginStoryboardSegue.swift; sourceTree = "<group>"; };
 		FB79C4DF1D6353C600E056C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -127,6 +127,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB21486E22083AAB006E2F1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */,
+				FBEC2E181D67412400E6D749 /* Employee.swift */,
+				FB79C4D91D5E661F00E056C5 /* Office.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB21486F22083ABB006E2F1B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC2EE31D6CD81B00E6D749 /* RESTApi.swift */,
+				FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */,
+				FB3F58981D590075002C5078 /* Document.xcdatamodeld */,
+				FB3F58961D590075002C5078 /* Document.swift */,
+				FBEC2E161D66380800E6D749 /* MapLocal2.plist */,
+				FB2402D41D6F5FEB001B8262 /* TestData.swift */,
+				FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		FB3F58861D590075002C5078 = {
 			isa = PBXGroup;
 			children = (
@@ -148,37 +172,69 @@
 		FB3F58911D590075002C5078 /* mApp */ = {
 			isa = PBXGroup;
 			children = (
-				FB79C4E11D6353C600E056C5 /* mApp.entitlements */,
 				FB3F58921D590075002C5078 /* AppDelegate.swift */,
-				FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */,
-				FB3F58941D590075002C5078 /* ViewController.swift */,
-				FB3F58961D590075002C5078 /* Document.swift */,
+				FBB995042208B0300058C978 /* ViewControllers */,
+				FBB995022208B0020058C978 /* Views */,
+				FBB995012208AFEB0058C978 /* MapKit */,
+				FB21486E22083AAB006E2F1B /* Models */,
+				FBB995062208B0770058C978 /* Data */,
+				FB79C4E11D6353C600E056C5 /* mApp.entitlements */,
 				FB3F589B1D590077002C5078 /* Assets.xcassets */,
 				FB3F589D1D590077002C5078 /* Main.storyboard */,
 				FB3F58A01D590077002C5078 /* Info.plist */,
-				FB3F58981D590075002C5078 /* Document.xcdatamodeld */,
-				FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */,
-				FB79C4D71D5E65BB00E056C5 /* MapLocal.plist */,
-				FB79C4D91D5E661F00E056C5 /* Office.swift */,
-				845AA31D1D620BC70066D070 /* OfficeMapOverlay.swift */,
-				845AA31F1D620D300066D070 /* OfficeMapOverlayView.swift */,
-				845AA3211D62293E0066D070 /* LoginViewController.swift */,
-				845AA3231D624BF80066D070 /* ProfileViewController.swift */,
-				FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */,
-				FB4CF98C1D64DB44001FE67B /* TWGMapView.swift */,
-				FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */,
-				FBEC2E161D66380800E6D749 /* MapLocal2.plist */,
-				FBEC2E181D67412400E6D749 /* Employee.swift */,
-				FBEC2E1A1D67478400E6D749 /* CoordinateSystem.swift */,
-				FBEC2EE31D6CD81B00E6D749 /* RESTApi.swift */,
-				FB43E8A71D6E134D00A9BB87 /* Data.json */,
-				FB2402D41D6F5FEB001B8262 /* TestData.swift */,
-				FB2402D61D6F69A8001B8262 /* DataP.plist */,
-				FB2402D81D6F8796001B8262 /* EmployeeView.swift */,
-				FB2402DE1D701D0E001B8262 /* ProfileImageView.swift */,
-				FB2402DC1D70144E001B8262 /* EmployeeView.xib */,
+				FBB995052208B0650058C978 /* TestData */,
+				FB21486F22083ABB006E2F1B /* Test */,
 			);
 			path = mApp;
+			sourceTree = "<group>";
+		};
+		FBB995012208AFEB0058C978 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				845AA31D1D620BC70066D070 /* OfficeMapOverlay.swift */,
+				845AA31F1D620D300066D070 /* OfficeMapOverlayView.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		FBB995022208B0020058C978 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB79C4DD1D6251DB00E056C5 /* loginStoryboardSegue.swift */,
+				FB2402DC1D70144E001B8262 /* EmployeeView.xib */,
+				FB2402DE1D701D0E001B8262 /* ProfileImageView.swift */,
+				FB2402D81D6F8796001B8262 /* EmployeeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBB995042208B0300058C978 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				845AA3211D62293E0066D070 /* LoginViewController.swift */,
+				845AA3231D624BF80066D070 /* ProfileViewController.swift */,
+				FB3F58941D590075002C5078 /* ViewController.swift */,
+				FBCC5AE21D5A2DB90015D32B /* mainWindowController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FBB995052208B0650058C978 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				FBCC5AE91D5A600E0015D32B /* Floorplan_2016.06.25.png.pdf */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		FBB995062208B0770058C978 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC2E141D6631C700E6D749 /* OfficeMapCoordinates.plist */,
+				FB43E8A71D6E134D00A9BB87 /* Data.json */,
+				FB2402D61D6F69A8001B8262 /* DataP.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		FBCC5AE61D5A5EF80015D32B /* Frameworks */ = {
@@ -231,7 +287,7 @@
 				TargetAttributes = {
 					FB3F588E1D590075002C5078 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = G69MVG52LV;
+						DevelopmentTeam = S4W4S3W3Y3;
 						SystemCapabilities = {
 							com.apple.Maps.Mac = {
 								enabled = 1;
@@ -456,6 +512,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -464,7 +521,7 @@
 				);
 				INFOPLIST_FILE = mApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twg.mApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.mApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -479,6 +536,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -487,7 +545,7 @@
 				);
 				INFOPLIST_FILE = mApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twg.mApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.mApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

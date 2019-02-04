@@ -10,6 +10,7 @@ import Cocoa
 import Firebase
 import GTMOAuth2
 
+// Google Account Scopes, declaring what we are requesting access for from Google
 let scopes: [String] = [
     "openid",
     "https://www.googleapis.com/auth/calendar.readonly",
@@ -17,10 +18,12 @@ let scopes: [String] = [
 
 class LoginViewController: NSViewController {
     
+    // Firebase Auth Helper Object
     let ref = Firebase(url: "https://xyz.firebaseio.com")
 
     @IBAction func Gmail(sender: NSButton) {
         //loadGoogle()
+        // If already logged in, disable button
         if isLoggedIn {
             sender.enabled = false
         }
@@ -30,7 +33,7 @@ class LoginViewController: NSViewController {
         
     }
     
-    
+    // Get Started Button
     @IBAction func GetStarted(sender: AnyObject) {
         let profileVC = storyboard?.instantiateControllerWithIdentifier("ProfileVC") as! ProfileViewController
         view.window?.contentViewController = profileVC
@@ -41,6 +44,7 @@ class LoginViewController: NSViewController {
         super.viewDidLoad()
     }
     
+    // Helper method to load Google SSO Request
     func loadGoogle() {
         let frameworkBundle = NSBundle(forClass: GTMOAuth2WindowController.self)
         let windowController = GTMOAuth2WindowController(scope: "" , clientID: "197820099549-60u0q5sttaacio87tl4umaik1tob49ls.apps.googleusercontent.com", clientSecret: "zwTPJEKyWrCiGgC_DOCYNALJ", keychainItemName: "mApps: Google", resourceBundle: frameworkBundle)
@@ -48,6 +52,7 @@ class LoginViewController: NSViewController {
         windowController.signInSheetModalForWindow(self.view.window, delegate: self, finishedSelector: #selector(LoginViewController.didFinishWithAuth(windowController:auth:error:)))
     }
     
+    // Helper method to handle login
     func didFinishWithAuth(windowController wc:GTMOAuth2WindowController, auth: GTMOAuth2Authentication, error: NSError?) {
         if error != nil {
             print(error)
@@ -55,12 +60,13 @@ class LoginViewController: NSViewController {
         } else {
             print(auth)
             isLoggedIn = true
+            // Log in with completion handler
             ref.authWithOAuthProvider("google", token: auth.accessToken, withCompletionBlock: { err, auth in
-            if err != nil {
-             print(err)
-             } else {
-             print(auth)
-             }
+                if err != nil {
+                    print(err)
+                } else {
+                    print(auth)
+                }
              })
         }
     }

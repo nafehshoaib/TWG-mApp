@@ -11,6 +11,7 @@ import MapKit
 
 class EmployeeView: NSView {
     
+    // Employee view custom class
     var email = ""
     @IBOutlet var name: NSTextField?
     @IBOutlet var position: NSTextField?
@@ -18,6 +19,7 @@ class EmployeeView: NSView {
     @IBOutlet var interests: NSTextField?
     @IBOutlet var imageView: ProfileImageView?
     
+    // mail to button
     @IBAction func emailButton(sender: NSButton) {
         let mailToAddress = "mailto:" + email
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: mailToAddress)!)

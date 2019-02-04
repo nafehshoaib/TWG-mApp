@@ -10,7 +10,7 @@ import Cocoa
 import MapKit
 
 class CoordinateSystem {
-    
+    // Setup coordinate system for map, using table numbers and workplace related terms
     var coordinatesFromSystem: CLLocationCoordinate2D
     
     init (filename: String, tableNumber: Int, chairNumber: Int) {

@@ -20,43 +20,55 @@ class ViewController: NSViewController {
     
     //@IBOutlet var pdfView: PDFView?
     //var doc: PDFDocument = PDFDocument(URL: NSBundle.mainBundle().URLForResource("Floorplan_2016.06.25.png", withExtension: "pdf"))
+    
+    // MapView Storyboard connection
     @IBOutlet var mapView: MKMapView?
+    // Office model, to access Office's coordinates in world
     var office = Office(filename: "OfficeMapCoordinates")
+    // Firebase helper object
     let firebase = Service(baseURL: "https://mapps-31c97.firebaseio.com/", useDefaultTransformers: true)
+    
     let isUsingFirebase = false
     let isUsingJSON = true
+    
+    // Access JSON file of all employees
     let jsonFile = NSBundle.mainBundle().pathForResource("Data", ofType: "json")!
     let jsonLink = NSURL(string: "https://www.dropbox.com/s/0na2kd287r8lrn5/Data.json?dl=0")
     
+    // Test with property list
     let filePath = NSBundle.mainBundle().pathForResource("DataP", ofType: "plist")
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         //pdfView?.setDocument(doc)
+        // calculate the length of the area in data, to then use it as the span of the MapView
         let latDelta = (office.overlayTopLeftCoordinate.latitude -
             office.overlayBottomRightCoordinate.latitude) / 2.5
         
-        // think of a span as a tv size, measure from one corner to another
+        // set the span of the map
         let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
-        
         let region = MKCoordinateRegionMake(office.midCoordinate, span)
         
         mapView!.region = region
-        // Do any additional setup after loading the view.
+        
+        // Add map overlays
         addOverlay()
         
-        // add Annotations
+        // add Annotations, aka pins
         var employees: [Employee] = []
         
+        // load data from firebase
         let data = firebase.resource("")
         data.load()
         print("\(data.jsonDict)")
         
+        // get data from jsonFile, as declared above
         let jsonData = NSData(contentsOfFile: jsonFile)
         let json = JSON(data: jsonData!)
         let properties: NSDictionary = NSDictionary(contentsOfFile: filePath!)!
         
+        // for loop to systematically drop pins
         for i in 0...numberOfChairs-2 {
             var firstName: String? = ""
             var lastName: String? = ""
@@ -106,10 +118,12 @@ class ViewController: NSViewController {
         mapView?.addAnnotations(employees)
     }
     
+    // search field test
     @IBAction func searchFieldOne(sender: NSSearchField) {
         sender.placeholderString = "Hello ITs EM"
     }
     
+    // display login viewController if not logged in
     override func viewDidAppear() {
         super.viewDidAppear()
         if !isLoggedIn {
@@ -130,6 +144,7 @@ class ViewController: NSViewController {
         }
     }
     
+    // add overlays as previously loaded
     func addOverlay() {
         let overlay = OfficeMapOverlay(office: office)
         mapView?.addOverlay(overlay)
@@ -138,7 +153,7 @@ class ViewController: NSViewController {
 }
 
 // MARK: - Map View delegate
-
+// extension to separate code bases
 extension ViewController: MKMapViewDelegate {
     
     // MapOverlay Setup
@@ -148,7 +163,8 @@ extension ViewController: MKMapViewDelegate {
         
         return overlayView
     }
-    
+
+    // setup mapView annotations using custom model
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         if let annotation = annotation as? Employee {
             let identifier = "pin"
@@ -168,6 +184,7 @@ extension ViewController: MKMapViewDelegate {
         return nil
     }
     
+    // handling of selecting a pin
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         var objects: NSArray?
         var customView = EmployeeView()
